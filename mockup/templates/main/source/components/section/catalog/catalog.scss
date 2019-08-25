@@ -347,36 +347,43 @@
 	}
 
 	&__simile {
-		background: url("../images/compare.svg") no-repeat;
+		background: url("../images/compare-ya.svg") no-repeat;
 		background-position: top center;
-		width: 15px;
-		height: 18px;
+		width: 20px;
+		height: 20px;
 		color: transparent;
 		overflow: hidden;
+		margin-left: 16px;
+		margin-right: auto;
+		background-size: 20px;
 
 		&.active {
-			background: url("../images/compare-color.svg") no-repeat;
+			background: url("../images/compare-ya-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
+			background-size: 20px;
 		}
 	}
 
 	&__favorite {
-		background: url("../images/fav inactive.svg") no-repeat;
+		background: url("../images/Favorite-yandex.svg") no-repeat;
 		background-position: top center;
 		background-size: contain;
-		margin-left: 22px;
-		margin-right: auto;
+		order: -1;
+		background-size: 20px;
+
 
 		&.active {
-			background: url("../images/fav active.svg") no-repeat;
+			background: url("../images/Favorite-yandex-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
+			background-size: 20px;
 		}
 
-		width: 18px;
-		height: 18px;
+		width: 20px;
+		height: 20px;
 	}
+
 
 	.stock {
 		padding: 0;

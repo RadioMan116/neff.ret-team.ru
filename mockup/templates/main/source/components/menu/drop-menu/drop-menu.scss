@@ -1,5 +1,6 @@
 .header__dropdown-menu {
 	display: flex;
+	align-items: center;
 	margin-left: 5%;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -12,6 +13,8 @@
 
 	.dropdown-menu {
 		position: relative;
+		display: flex;
+		align-items: center;
 
 		&__list {
 			margin: 0;
@@ -65,8 +68,7 @@
 			}
 
 			&:hover {
-				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
-				background-color: #ffffff;
+
 				color: #394791;
 				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
 			}
@@ -169,18 +171,20 @@
 	@media (max-width: 1200px) {
 		margin-left: 58px;
 	}
+
+	.time-work {
+		display: none;
+	}
 }
 
 @media (max-width: 767px) {
 	.menu.active {
 		height: 100vh;
-		overflow-y: scroll;
+		// overflow-y: scroll;
 	}
 
 	.header__dropdown-menu {
-		height: 90%;
-		left: 3%;
-		right: 3%;
+		align-items: baseline;
 		width: unset;
 		display: flex;
 		flex-direction: column;
@@ -215,6 +219,7 @@
 				background: url("../images/dp-1.svg") no-repeat 0 10px;
 
 			}
+
 			&:nth-child(3) {
 				display: none;
 			}
@@ -225,7 +230,36 @@
 		}
 
 		.header__telephones {
-			display: none !important;
+			// display: none !important;
+		}
+
+		.time-work {
+			color: #666;
+			font-family: Arial;
+			font-size: 13px;
+			line-height: 22px;
+			text-align: left;
+			display: block;
+
+			i {
+				color: #666;
+				font-family: Arial;
+				font-size: 13px;
+				line-height: 22px;
+				text-align: left;
+				font-style: normal;
+				margin-right: 4px;
+			}
+		}
+
+		.header__telephones {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 0;
+			align-items: baseline;
+			order: 3;
+			max-height: 190px;
+			padding-top: 1rem;
 		}
 	}
 
@@ -252,9 +286,9 @@
 				padding: 0;
 				width: 100%;
 
-				&:hover {
-					box-shadow: none !important;
-				}
+				// &:hover {
+				// 	box-shadow: none !important;
+				// }
 
 				&.last {
 					padding: 0;
@@ -305,14 +339,13 @@
 		}
 	}
 
-
 	.menu__item {
 		display: flex;
 		position: relative;
 		flex-wrap: wrap;
 
 		&:first-child {
-			order: 2;
+
 
 			// &:hover {
 			// 	background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 100% 50%/18px no-repeat;

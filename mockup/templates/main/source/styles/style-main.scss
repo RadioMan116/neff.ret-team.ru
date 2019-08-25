@@ -4,7 +4,8 @@ html {
 	&.no-overflow {
 		overflow: unset;
 	}
-	&.js-height{
+
+	&.js-height {
 		height: 100%;
 	}
 }
@@ -19,6 +20,10 @@ img {
 .fixed {
 	overflow: hidden;
 	// width:calc(100% - 17px);
+}
+
+.hide {
+	display: none !important;
 }
 
 .swiper-container,
