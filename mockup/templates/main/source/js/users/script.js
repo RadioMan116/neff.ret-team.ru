@@ -5,20 +5,23 @@ $(document).ready(function () {
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu);
+		menuList = document.querySelector('.menu')
 		menuBottom = document.getElementById('js-header__block_bottom');
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
 			if (-1 !== button.className.indexOf("opened")) {
 				button.className = button.className.replace(" opened", "");
 				button.setAttribute("aria-expanded", "false");
-				menuBottom.className = menuBottom.className.replace("active", "");
+				menuBottom.classList.remove("active");
+				menuList.classList.remove("active");
 				$("body").removeClass("fixed");
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
 			} else {
 				button.className += " opened";
 				button.setAttribute("aria-expanded", "true");
-				menuBottom.className += " active";
+				menuBottom.classList.add("active");
+				menuList.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
 			}
@@ -1216,7 +1219,15 @@ $(document).ready(function () {
 		if ($('h1.title:contains("Статьи и акции")').length > 0) {
 			$('.col-md-3').addClass('order');
 		}
-		$('.js-city-change').appendTo('#js-header__block_bottom .menu');
+		// $('.js-city-change').appendTo('#js-header__block_bottom .menu');
+		(function () {
+			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
+			$(".header__block_top .menu").appendTo('#js-header__block_bottom .container');
+			$('.js-city-change').appendTo('#js-header__block_bottom .menu');
+			$('#js-menu .header__telephones').appendTo('#js-header__block_bottom .menu');
+
+			// firstDropdownMenu.classList.add("active");
+		})();
 
 
 	}
@@ -1459,7 +1470,7 @@ $(document).ready(function () {
 
 	})();
 	$(".js-viewForm").click(function () {
-		//upon clicking of the button do an ajax post 
+		//upon clicking of the button do an ajax post
 
 		$(document).ajaxSuccess(function () {
 			new Ratings({
