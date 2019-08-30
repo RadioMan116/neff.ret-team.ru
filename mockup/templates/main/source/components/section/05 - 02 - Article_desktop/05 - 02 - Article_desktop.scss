@@ -397,6 +397,17 @@
 		.catalog__specification {
 			height: unset;
 		}
+
+		.catalog__pic {
+			align-items: baseline;
+			height: unset;
+			max-height: 250px;
+
+			img {
+				width: 100%;
+				max-height: unset;
+			}
+		}
 	}
 
 	.swiper-scrollbar {
