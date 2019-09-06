@@ -2302,7 +2302,6 @@ $(window).on('load', function () {
 
 
 	}
-
 	if ($('a[data-fancybox="gallery"] img').length) {
 		$('a[data-fancybox="gallery"] img').eq(0).each(function () {
 			var img = new Image($(this));
