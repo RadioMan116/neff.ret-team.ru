@@ -1,6 +1,8 @@
 .menu-vert {
 	padding: 10px 0;
-	background-color: rgba(57, 71, 145, .76863);
+	// background-color: rgba(57, 71, 145, .76863);
+	border: 1px solid #eee;
+    background-color: #f8f8f8;
 	margin-bottom: 13px;
 	// .menu-vert__list
 
@@ -19,6 +21,7 @@
 
 			.menu-vert__link {
 				background-color: #394791;
+				color: #fff;
 
 				&:after {
 					position: absolute;
@@ -28,6 +31,11 @@
 					content: '';
 					bottom: -5px
 				}
+
+			&:before {
+				background: #fff;
+				transform: rotate(765deg)
+			}
 			}
 		}
 	}
@@ -35,7 +43,7 @@
 	// .menu-vert__link
 
 	&__link {
-		color: #fff;
+		color: #333;
 		font-size: 13px;
 		font-weight: 500;
 		text-transform: uppercase;
@@ -55,7 +63,7 @@
 		&:before {
 			width: 8px;
 			height: 8px;
-			background-color: #fff;
+			background-color: #333;
 			left: 26px;
 			top: 50%;
 			margin-top: -4px;
@@ -69,9 +77,11 @@
 		&:hover {
 			background-color: #394791;
 			text-decoration: none;
+			color: #fff;
+			box-shadow: 0 2px 21px rgba(0,0,0,.1);
 
 			&:before {
-				background: #5f76e6;
+				background: #fff;
 				transform: rotate(765deg)
 			}
 
