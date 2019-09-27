@@ -1,756 +1,1164 @@
 <div class="special-offers catalog">
+
 	<div class="catalog__sorting">
 		<ul class="catalog__ul">
 			Сортировать по:
-			<li class="catalog__li"><a href="#" sort="popular" order="ASC"
-					class="catalog__sort"><span>популярности</span><i></i></a></li>
-			<li class="catalog__li"><a href="#" sort="new" order="ASC"
-					class="catalog__sort"><span>новизне</span><i></i></a></li>
-			<li class="catalog__li"><a href="#" sort="price" order="DESC"
-					class="catalog__sort"><span>цене</span><i></i></a></li>
+
+			<li class="catalog__li active">
+				<a href="" data-sort="HIT" data-order="ASC" class="catalog__sort js-sort_change">
+					<span>популярности</span>
+					<i></i>
+				</a>
+			</li>
+			<li class="catalog__li ">
+				<a href="" data-sort="NEW" data-order="ASC" class="catalog__sort js-sort_change">
+					<span>новизне</span>
+					<i></i>
+				</a>
+			</li>
+			<li class="catalog__li ">
+				<a href="" data-sort="PRICE" data-order="ASC" class="catalog__sort js-sort_change">
+					<span>цене</span>
+					<i></i>
+				</a>
+			</li>
 		</ul>
 		<div class="sorting__info">
-			<span class="sorting__number">294</span><span class="sorting__number">позиции</span>
+			<span class="sorting__number js-catalog_count-blk">131 позиция</span>
 		</div>
 	</div>
-	<div class="tags">
-		<ul class="tags__list">
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Все
-				</a>
-			</li>
-			<li class="tags__item active">
-				<a href="#" class="tags__link">
-					Холодильник с ящиками для овощей и фруктов в Москве
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Холодильники Side-by-Side
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Морозильные камеры
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Холодильники Side-by-Side
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Морозильные камеры
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Однокамерные холодильники
-				</a>
-			</li>
-			<li class="tags__item">
-				<a href="#" class="tags__link">
-					Все теги
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="catalog__items">
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-			<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583
-				Vinidor</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/A+.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/A++.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/A+++.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Bio Cool.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Bio Fresh- Plus.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Bio Fresh.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price">134 200<i
-						class="special-offers__rub catalog__rub">руб.</i></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
 
-				<a href="#" class="catalog__simile active"></a>
-				<a href="#" class="catalog__favorite active"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+	<input type="hidden" class="js-catalog_count" name="catalog_count" value="131 позиция">
+
+	<div class="js-news">
+		<div class="js-news__inner catalog__items js-ecom_product-list" data-list="Catalog Result">
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3633" id="bx_3966226736_3633">
+
+				<a class="catalog__pic"
+					href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bt73n2.html"
+					title="Индукционная варочная панель Neff T46BT73N2">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/b89/245_230_1/b89c4cbd24800fc3a6ce963d70913a28.jpg"
+						alt="Индукционная варочная панель Neff T46BT73N2 preview 1"
+						title="Индукционная варочная панель Neff T46BT73N2 фото 1"
+						class="special-offers__img catalog__img lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/b89/245_230_1/b89c4cbd24800fc3a6ce963d70913a28.jpg">
+				</a>
+				<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bt73n2.html"
+					title="Индукционная варочная панель Neff T46BT73N2"
+					class="special-offers__text catalog__text">Индукционная варочная панель Neff T46BT73N2</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+
+				<div class="catalog__prop">
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-			<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2
-				Premium NoFrost (SICN 3386 + ICN 3386)</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Black Steel.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/BLU Performance.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Central-Power Coolin.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Colour Line.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Comfort Glass Line.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Duo Cooling.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale price__dashed">
-				<span class="special-offers__price catalog__price">
-					199 000
-					<i class="special-offers__rub catalog__rub">руб.</i>
-					<span class="price__absolute">
-						250 000 руб.
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						52 990 <i class="special-offers__rub catalog__rub">руб.</i>
 					</span>
-				</span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
 
-			<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Flex System.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Fresh Air.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Frost Control.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Frost Protect.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Frost Safe.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Glass Edition.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price price__dashed">
+					<a href="" class="special-offers__buy js-add2basket" data-id="3633">В корзину</a>
 
-					82 500 <i class="special-offers__rub catalog__rub">руб.</i>
-					<span class="price__absolute">83 500 руб.</span>
-				</span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
+				</div>
 
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_4.jpg" srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
+				<div class="catalog__existence">
 
-			<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN
-				3386 + ICN 3386)</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Grand Cru.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Hard Line.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Ice Maker.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/LED.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Magic Eye.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/No Frost.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price">134 200<i
-						class="special-offers__rub catalog__rub">руб.</i></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
+					<a href="" class="catalog__simile js-compare " data-id="3633"></a>
 
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить в 1 клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item stock">
-			<a class=upsale__parent href="#">
-				<img class="stock_img" src="images/Catalog_stock.jpg"
-					srcset="images/Catalog_stock@2x.jpg 2x,images/Catalog_stock@3x.jpg 3x" alt="">
-			</a>
-			<div class="stock__info">
-				<span class="stock__title">30%</span>
-				<span class="stock__text">Морозильник <br> Liebherr GN 2723 Comfort NoFrost
-					<span>скидка до 30%</span>
-				</span>
-				<a class="stock__link" href="#"><span class="stock__arrow">Узнать больше</span></a>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-			<a href="#" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Power Cooling.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Premium Glass Line.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Side by Side.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Silver.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Smart Device.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Smart Frost.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price">134 200<i
-						class="special-offers__rub catalog__rub">руб.</i></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
-				<!-- <span class="catalog__presence grey">под заказ</span> -->
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-			<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583
-				Vinidor</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Smart Steel.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Soft System.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Soft Telescopic.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Stainless Steel Look.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Stop Frost.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Super Cool.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price">134 200<i
-						class="special-offers__rub catalog__rub">руб.</i></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3633"></a>
 
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-			<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2
-				Premium NoFrost (SICN 3386 + ICN 3386)</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Super Frost.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Swing Desing.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Swing Line.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Telescopic Rails.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Tip Open.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Vario Box.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale">
-				<span class="special-offers__price catalog__price">98 400<i
-						class="special-offers__rub catalog__rub">руб.</i></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3633">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
 
-			<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Vario Safe.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Vario Space.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Vinidor.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Vinothek.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Аккумулятор холода.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Класс Comfort.svg" class="icons-prop-item">
-				</a>
-			</div>
-			<div class="special-offers__sale catalog__sale price__dashed">
-				<span class="special-offers__price catalog__price">115 000<i
-						class="special-offers__rub catalog__rub">руб.</i><span class="price__absolute">122 750
-						руб.</span></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
+				</div>
 
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+				<!-- begin label -->
+				<div class="announcing">
+					<div class="announcing__item">
+						<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/best.svg" alt="хит" title="хит">
+					</div>
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
-				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
-				</div>
-			</div>
-		</div>
-		<div class="catalog__item">
-			<a class="catalog__pic" href="#">
-				<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-					class="special-offers__img catalog__img">
-			</a>
-
-			<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
-			<span class="catalog__presence">В наличии</span>
-			<div class="catalog__specification">
-				<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-				<span class="catalog__feature">Габариты (см):<span class="catalog__bold"> 63x55.4x62.4</span></span>
-				<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-						class="catalog__bold">107</span></span>
-				<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-						class="catalog__bold">15</span></span>
-				<span class="catalog__feature">Тип размораживания:<span class="catalog__bold">ручная</span></span>
-			</div>
-			<div class="catalog__prop">
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Класс Premium Plus.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Класс Premium.svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Режим «Отпуск».svg" class="icons-prop-item">
-				</a>
-				<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
-					<img src="images/benefits-icons/Функция защиты от де.svg" class="icons-prop-item">
-				</a>
+				<!-- end label -->
 
 			</div>
-			<div class="special-offers__sale catalog__sale price__dashed">
-				<span class="special-offers__price catalog__price">115 000<i
-						class="special-offers__rub catalog__rub">руб.</i><span class="price__absolute">122 750
-						руб.</span></span>
-				<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-			</div>
-			<div class="catalog__existence">
 
-				<a href="#" class="catalog__simile"></a>
-				<a href="#" class="catalog__favorite"></a>
-				<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3632" id="bx_3966226736_3632">
+
+				<a class="catalog__pic"
+					href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bd53n2.html"
+					title="Индукционная варочная панель Neff T46BD53N2">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/337/245_230_1/33735650afc633f427fda4b8effb4d43.jpg"
+						alt="Индукционная варочная панель Neff T46BD53N2 preview 1"
+						title="Индукционная варочная панель Neff T46BD53N2 фото 1"
+						class="special-offers__img catalog__img lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/337/245_230_1/33735650afc633f427fda4b8effb4d43.jpg">
+				</a>
+				<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bd53n2.html"
+					title="Индукционная варочная панель Neff T46BD53N2"
+					class="special-offers__text catalog__text">Индукционная варочная панель Neff T46BD53N2</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						49 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3632">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3632"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3632"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3632">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+					<div class="announcing__item">
+						<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/best.svg" alt="хит" title="хит">
+					</div>
+				</div>
+				<!-- end label -->
+
 			</div>
-			<div class="announcing">
-				<div class="announcing__item">
-					<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3605" id="bx_3966226736_3605">
+
+				<a class="catalog__pic"
+					href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t58bt20n0.html"
+					title="Индукционная варочная панель Neff T58BT20N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/452/245_230_1/452f4829dcf024f5793f6c4f975ad589.jpg"
+						alt="Индукционная варочная панель Neff T58BT20N0 preview 1"
+						title="Индукционная варочная панель Neff T58BT20N0 фото 1"
+						class="special-offers__img catalog__img lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/452/245_230_1/452f4829dcf024f5793f6c4f975ad589.jpg">
+				</a>
+				<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t58bt20n0.html"
+					title="Индукционная варочная панель Neff T58BT20N0"
+					class="special-offers__text catalog__text">Индукционная варочная панель Neff T58BT20N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">5</span></span>
+
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+
+				<div class="catalog__prop">
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						87 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3605">В корзину</a>
+
 				</div>
-				<div class="announcing__item">
-					<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3605"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3605"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3605">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
 				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+					<div class="announcing__item">
+						<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
+					</div>
+					<div class="announcing__item">
+						<img src="images/small/best.svg" alt="хит" title="хит">
+					</div>
+				</div>
+				<!-- end label -->
+
 			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3594" id="bx_3966226736_3594">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26cs49s0.html"
+					title="Варочная панель Neff T26CS49S0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/1ec/245_230_1/1ecf4ecf870199c8a5b5306688e0a542.jpg"
+						alt="Варочная панель Neff T26CS49S0 preview 1" title="Варочная панель Neff T26CS49S0 фото 1"
+						class="special-offers__img catalog__img loaded lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/1ec/245_230_1/1ecf4ecf870199c8a5b5306688e0a542.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26cs49s0.html"
+					title="Варочная панель Neff T26CS49S0" class="special-offers__text catalog__text">Варочная панель
+					Neff T26CS49S0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						28 490 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3594">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3594"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3594"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3594">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3600" id="bx_3966226736_3600">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27da69n0.html"
+					title="Варочная панель Neff T27DA69N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/45d/245_230_1/45d688543fdffd109631caf996eebbee.jpg"
+						alt="Варочная панель Neff T27DA69N0 preview 1" title="Варочная панель Neff T27DA69N0 фото 1"
+						class="special-offers__img catalog__img loaded lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/45d/245_230_1/45d688543fdffd109631caf996eebbee.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27da69n0.html"
+					title="Варочная панель Neff T27DA69N0" class="special-offers__text catalog__text">Варочная панель
+					Neff T27DA69N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">5</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						46 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3600">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3600"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3600"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3600">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3602" id="bx_3966226736_3602">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27ta69n0.html"
+					title="Варочная панель Neff T27TA69N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/76c/245_230_1/76c84a2ea0edca51ad7e9df25c8f8c8a.jpg"
+						alt="Варочная панель Neff T27TA69N0 preview 1" title="Варочная панель Neff T27TA69N0 фото 1"
+						class="special-offers__img catalog__img loaded lazyloaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/76c/245_230_1/76c84a2ea0edca51ad7e9df25c8f8c8a.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27ta69n0.html"
+					title="Варочная панель Neff T27TA69N0" class="special-offers__text catalog__text">Варочная панель
+					Neff T27TA69N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">5</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						87 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3602">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3602"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3602"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3602">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3604" id="bx_3966226736_3604">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t29da69n0.html"
+					title="Варочная панель Neff T29DA69N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/349/245_230_1/349dda883e347c4f306bb732cafb4eec.jpg"
+						alt="Варочная панель Neff T29DA69N0 preview 1" title="Варочная панель Neff T29DA69N0 фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/349/245_230_1/349dda883e347c4f306bb732cafb4eec.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t29da69n0.html"
+					title="Варочная панель Neff T29DA69N0" class="special-offers__text catalog__text">Варочная панель
+					Neff T29DA69N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">5</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						49 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3604">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3604"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3604"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3604">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3626" id="bx_3966226736_3626">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26da49n0r.html"
+					title="Варочная панель Neff T26DA49N0R">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/8c9/245_230_1/8c90713c8e81791e58da3617752a1901.jpg"
+						alt="Варочная панель Neff T26DA49N0R preview 1" title="Варочная панель Neff T26DA49N0R фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/8c9/245_230_1/8c90713c8e81791e58da3617752a1901.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26da49n0r.html"
+					title="Варочная панель Neff T26DA49N0R" class="special-offers__text catalog__text">Варочная панель
+					Neff T26DA49N0R</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						32 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3626">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3626"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3626"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3626">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3627" id="bx_3966226736_3627">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26ds49c0r.html"
+					title="Варочная панель Neff T26DS49C0R">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/7b3/245_230_1/7b3591ea747330707a6557ec08b7e1cd.jpg"
+						alt="Варочная панель Neff T26DS49C0R preview 1" title="Варочная панель Neff T26DS49C0R фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/7b3/245_230_1/7b3591ea747330707a6557ec08b7e1cd.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26ds49c0r.html"
+					title="Варочная панель Neff T26DS49C0R" class="special-offers__text catalog__text">Варочная панель
+					Neff T26DS49C0R</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						26 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3627">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3627"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3627"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3627">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3628" id="bx_3966226736_3628">
+
+				<a class="catalog__pic" href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26ds49j0r.html"
+					title="Варочная панель Neff T26DS49J0R">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/928/245_230_1/9283877665668d9fdfa2b25a7bcd5cf9.jpg"
+						alt="Варочная панель Neff T26DS49J0R preview 1" title="Варочная панель Neff T26DS49J0R фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/928/245_230_1/9283877665668d9fdfa2b25a7bcd5cf9.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26ds49j0r.html"
+					title="Варочная панель Neff T26DS49J0R" class="special-offers__text catalog__text">Варочная панель
+					Neff T26DS49J0R</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						26 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3628">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3628"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3628"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3628">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3505" id="bx_3966226736_3505">
+
+				<a class="catalog__pic"
+					href="/neff/varochnye-paneli/elektricheskie/varochnaya-panel-neff-t18ts28n0.html"
+					title="Варочная панель Neff T18TS28N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/f9e/245_230_1/f9e7fa01ed574783ac096835242f0ee5.jpg"
+						alt="Варочная панель Neff T18TS28N0 preview 1" title="Варочная панель Neff T18TS28N0 фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/f9e/245_230_1/f9e7fa01ed574783ac096835242f0ee5.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/elektricheskie/varochnaya-panel-neff-t18ts28n0.html"
+					title="Варочная панель Neff T18TS28N0" class="special-offers__text catalog__text">Варочная панель
+					Neff T18TS28N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">5</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						68 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3505">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3505"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3505"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3505">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
+			<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="3506" id="bx_3966226736_3506">
+
+				<a class="catalog__pic"
+					href="/neff/varochnye-paneli/elektricheskie/varochnaya-panel-neff-t18bt16n0.html"
+					title="Варочная панель Neff T18BT16N0">
+					<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/c70/245_230_1/c70848ea9a36e64669fcc6cfe71aa2a2.jpg"
+						alt="Варочная панель Neff T18BT16N0 preview 1" title="Варочная панель Neff T18BT16N0 фото 1"
+						class="special-offers__img catalog__img lazyloaded loaded"
+						src="https://neff.ret-team.ru/upload/resize_cache/iblock/c70/245_230_1/c70848ea9a36e64669fcc6cfe71aa2a2.jpg"
+						data-was-processed="true">
+				</a>
+				<a href="/neff/varochnye-paneli/elektricheskie/varochnaya-panel-neff-t18bt16n0.html"
+					title="Варочная панель Neff T18BT16N0" class="special-offers__text catalog__text">Варочная панель
+					Neff T18BT16N0</a>
+				<span class="catalog__presence ">В наличии</span>
+
+				<div class="catalog__specification">
+					<span class="catalog__feature">Количество конфорок: <span class="catalog__bold">4</span></span>
+
+				</div>
+
+				<div class="catalog__prop">
+				</div>
+
+				<div class="special-offers__sale catalog__sale">
+
+					<span class="special-offers__price catalog__price ">
+
+						56 990 <i class="special-offers__rub catalog__rub">руб.</i>
+					</span>
+
+					<a href="" class="special-offers__buy js-add2basket" data-id="3506">В корзину</a>
+
+				</div>
+
+				<div class="catalog__existence">
+
+					<a href="" class="catalog__simile js-compare " data-id="3506"></a>
+
+					<a href="" class="catalog__favorite  js-add2favorite" data-id="3506"></a>
+
+					<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick"
+						data-id="3506">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+				</div>
+
+				<!-- begin label -->
+				<div class="announcing">
+
+				</div>
+				<!-- end label -->
+
+			</div>
+
 		</div>
 	</div>
-	<a class="load-more" href="#">Загрузить еще</a>
-	{% include 'pagination/pagination.html' %}
-	<div class="recently-watched js-recently-watched">
-		<div class="recently-watched__title">
-			Вы недавно смотрели
-		</div>
-		<div class="swiper-pagination-recently-watched swiper-pagination"></div>
-		<div class="swiper-button-prev recently-watched__prev"></div>
-		<div class="swiper-button-next recently-watched__next"></div>
-		<a href="#" class="recently-watched__reset">Сбросить просмотренное</a>
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_3.jpg" alt="">
-					</a>
-					<a href='#' class="recently-watched__text">
-						Винный шкаф Liebherr EWTgw
-						3583 Vinidor
-						<span class="recently-watched__price">134 200
-							<i class="recently-watched__rub">руб.</i>
-						</span>
-					</a>
 
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_1.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
-						<span class="recently-watched__price">
-							34 200
-							<i class="recently-watched__rub">руб.</i>
-						</span>
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_2.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Морозильник Liebherr GN 2723
-						Comfort NoFrost
-						<span class="recently-watched__price">
-							14 200
-							<i class="recently-watched__rub">руб.</i>
-						</span>
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_1.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
-						<span class="recently-watched__price">
-							13 200
-							<i class="recently-watched__rub">руб.</i>
-						</span>
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_3.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Винный шкаф Liebherr EWTgw
-						3583 Vinidor
-						<span class="recently-watched__price">
-							1 200
-							<i class="recently-watched__rub">руб.</i>
-						</span>
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_1.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_2.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Морозильник Liebherr GN 2723
-						Comfort NoFrost
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-				<div class="swiper-slide">
-					<a href="#" class="recently-watched__pic">
-						<img src="images/new-items_1.jpg" alt="">
-					</a>
-					<a href="#" class="recently-watched__text">
-						Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
-					</a>
-					<div class="recently-watched__close"></div>
-				</div>
-			</div>
+	<div class="all-video__bottom">
+
+		<a href="#" id="load-items" class="load-more">Загрузить еще</a>
+
+		<!-- begin nav -->
+
+		<div class="pagination">
+
+			<span class="pagination__item pagination__item_state_current">1</span>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=2">2</a>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=3">3</a>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=4">4</a>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=5">5</a>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=8">...</a>
+			<a class="pagination__item" href="/neff/varochnye-paneli/?PAGEN_2=11">11</a>
+			<a class="pagination__next" href="/neff/varochnye-paneli/?PAGEN_2=2"></a>
 		</div>
 	</div>
+
+	<div class="special-offers similar-models">
+		<div class="container">
+			<span class="special-offers__title">Популярные товары</span> <!-- Slider main container -->
+			<div class="swiper-container swiper-container-four js-swiper-four swiper-container-horizontal">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper special-offers__wrapper js-ecom_product-list" data-list="PopularList"
+					style="transform: translate3d(0px, 0px, 0px);">
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item swiper-slide-active"
+						data-id="3633" id="bx_1290872195_3633" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bt73n2.html"
+							title="Индукционная варочная панель Neff T46BT73N2">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/b89/205_260_1/b89c4cbd24800fc3a6ce963d70913a28.jpg"
+								data-srcset="/upload/resize_cache/iblock/b89/410_520_1/b89c4cbd24800fc3a6ce963d70913a28.jpg 2x,/upload/resize_cache/iblock/b89/615_780_1/b89c4cbd24800fc3a6ce963d70913a28.jpg 3x"
+								class="special-offers__img catalog__img lazyloaded"
+								srcset="/upload/resize_cache/iblock/b89/410_520_1/b89c4cbd24800fc3a6ce963d70913a28.jpg 2x,/upload/resize_cache/iblock/b89/615_780_1/b89c4cbd24800fc3a6ce963d70913a28.jpg 3x"
+								src="https://neff.ret-team.ru/upload/resize_cache/iblock/b89/205_260_1/b89c4cbd24800fc3a6ce963d70913a28.jpg">
+						</a>
+						<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bt73n2.html"
+							title="Индукционная варочная панель Neff T46BT73N2"
+							class="special-offers__text  catalog__text">Индукционная варочная панель Neff T46BT73N2</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								52 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3633">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+							<div class="announcing__item"><img class=" lazyloaded"
+									data-src="https://neff.ret-team.ru/mockup/templates/main/build/images/small/best.svg" alt="Хит продаж"
+									title="Хит продаж" src="https://neff.ret-team.ru/mockup/templates/main/build/images/small/best.svg"></div>
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item swiper-slide-next"
+						data-id="3632" id="bx_1290872195_3632" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bd53n2.html"
+							title="Индукционная варочная панель Neff T46BD53N2">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/337/205_260_1/33735650afc633f427fda4b8effb4d43.jpg"
+								data-srcset="/upload/resize_cache/iblock/337/410_520_1/33735650afc633f427fda4b8effb4d43.jpg 2x,/upload/resize_cache/iblock/337/615_780_1/33735650afc633f427fda4b8effb4d43.jpg 3x"
+								class="special-offers__img catalog__img lazyloaded"
+								srcset="/upload/resize_cache/iblock/337/410_520_1/33735650afc633f427fda4b8effb4d43.jpg 2x,/upload/resize_cache/iblock/337/615_780_1/33735650afc633f427fda4b8effb4d43.jpg 3x"
+								src="https://neff.ret-team.ru/upload/resize_cache/iblock/337/205_260_1/33735650afc633f427fda4b8effb4d43.jpg">
+						</a>
+						<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t46bd53n2.html"
+							title="Индукционная варочная панель Neff T46BD53N2"
+							class="special-offers__text  catalog__text">Индукционная варочная панель Neff T46BD53N2</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								49 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3632">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+							<div class="announcing__item"><img class=" lazyloaded"
+									data-src="https://neff.ret-team.ru/mockup/templates/main/build/images/small/best.svg" alt="Хит продаж"
+									title="Хит продаж" src="https://neff.ret-team.ru/mockup/templates/main/build/images/small/best.svg"></div>
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3605"
+						id="bx_1290872195_3605" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t58bt20n0.html"
+							title="Индукционная варочная панель Neff T58BT20N0">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/452/205_260_1/452f4829dcf024f5793f6c4f975ad589.jpg"
+								data-srcset="/upload/resize_cache/iblock/452/410_520_1/452f4829dcf024f5793f6c4f975ad589.jpg 2x,/upload/resize_cache/iblock/452/615_780_1/452f4829dcf024f5793f6c4f975ad589.jpg 3x"
+								class="special-offers__img catalog__img lazyloaded"
+								srcset="/upload/resize_cache/iblock/452/410_520_1/452f4829dcf024f5793f6c4f975ad589.jpg 2x,/upload/resize_cache/iblock/452/615_780_1/452f4829dcf024f5793f6c4f975ad589.jpg 3x"
+								src="https://neff.ret-team.ru/upload/resize_cache/iblock/452/205_260_1/452f4829dcf024f5793f6c4f975ad589.jpg">
+						</a>
+						<a href="/neff/varochnye-paneli/induktsionnye-varochnye-paneli/induktsionnaya-varochnaya-panel-neff-t58bt20n0.html"
+							title="Индукционная варочная панель Neff T58BT20N0"
+							class="special-offers__text  catalog__text">Индукционная варочная панель Neff T58BT20N0</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								87 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3605">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3594"
+						id="bx_1290872195_3594" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26cs49s0.html"
+							title="Варочная панель Neff T26CS49S0">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/1ec/205_260_1/1ecf4ecf870199c8a5b5306688e0a542.jpg"
+								data-srcset="/upload/iblock/1ec/1ecf4ecf870199c8a5b5306688e0a542.jpg 2x,/upload/iblock/1ec/1ecf4ecf870199c8a5b5306688e0a542.jpg 3x"
+								class="special-offers__img catalog__img lazyloaded"
+								srcset="/upload/iblock/1ec/1ecf4ecf870199c8a5b5306688e0a542.jpg 2x,/upload/iblock/1ec/1ecf4ecf870199c8a5b5306688e0a542.jpg 3x"
+								src="https://neff.ret-team.ru/upload/resize_cache/iblock/1ec/205_260_1/1ecf4ecf870199c8a5b5306688e0a542.jpg">
+						</a>
+						<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26cs49s0.html"
+							title="Варочная панель Neff T26CS49S0" class="special-offers__text  catalog__text">Варочная
+							панель Neff T26CS49S0</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								28 490 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3594">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3600"
+						id="bx_1290872195_3600" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27da69n0.html"
+							title="Варочная панель Neff T27DA69N0">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/45d/205_260_1/45d688543fdffd109631caf996eebbee.jpg"
+								data-srcset="/upload/iblock/45d/45d688543fdffd109631caf996eebbee.jpg 2x,/upload/iblock/45d/45d688543fdffd109631caf996eebbee.jpg 3x"
+								class="special-offers__img catalog__img lazyloaded"
+								srcset="/upload/iblock/45d/45d688543fdffd109631caf996eebbee.jpg 2x,/upload/iblock/45d/45d688543fdffd109631caf996eebbee.jpg 3x"
+								src="https://neff.ret-team.ru/upload/resize_cache/iblock/45d/205_260_1/45d688543fdffd109631caf996eebbee.jpg">
+						</a>
+						<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27da69n0.html"
+							title="Варочная панель Neff T27DA69N0" class="special-offers__text  catalog__text">Варочная
+							панель Neff T27DA69N0</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								46 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3600">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3602"
+						id="bx_1290872195_3602" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27ta69n0.html"
+							title="Варочная панель Neff T27TA69N0">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/76c/205_260_1/76c84a2ea0edca51ad7e9df25c8f8c8a.jpg"
+								data-srcset="/upload/resize_cache/iblock/76c/410_520_1/76c84a2ea0edca51ad7e9df25c8f8c8a.jpg 2x,/upload/iblock/76c/76c84a2ea0edca51ad7e9df25c8f8c8a.jpg 3x"
+								class="special-offers__img catalog__img lazyload">
+						</a>
+						<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t27ta69n0.html"
+							title="Варочная панель Neff T27TA69N0" class="special-offers__text  catalog__text">Варочная
+							панель Neff T27TA69N0</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								87 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3602">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3604"
+						id="bx_1290872195_3604" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t29da69n0.html"
+							title="Варочная панель Neff T29DA69N0">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/349/205_260_1/349dda883e347c4f306bb732cafb4eec.jpg"
+								data-srcset="/upload/resize_cache/iblock/349/410_520_1/349dda883e347c4f306bb732cafb4eec.jpg 2x,/upload/resize_cache/iblock/349/615_780_1/349dda883e347c4f306bb732cafb4eec.jpg 3x"
+								class="special-offers__img catalog__img lazyload">
+						</a>
+						<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t29da69n0.html"
+							title="Варочная панель Neff T29DA69N0" class="special-offers__text  catalog__text">Варочная
+							панель Neff T29DA69N0</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								49 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3604">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+					<div class="catalog__item swiper-slide special-offers__slide js-ecom_product-item" data-id="3626"
+						id="bx_1290872195_3626" style="width: 285.667px; margin-right: 9px;">
+						<a class="catalog__pic"
+							href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26da49n0r.html"
+							title="Варочная панель Neff T26DA49N0R">
+							<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/8c9/205_260_1/8c90713c8e81791e58da3617752a1901.jpg"
+								data-srcset="/upload/resize_cache/iblock/8c9/410_520_1/8c90713c8e81791e58da3617752a1901.jpg 2x,/upload/resize_cache/iblock/8c9/615_780_1/8c90713c8e81791e58da3617752a1901.jpg 3x"
+								class="special-offers__img catalog__img lazyload">
+						</a>
+						<a href="/neff/varochnye-paneli/gazovye/varochnaya-panel-neff-t26da49n0r.html"
+							title="Варочная панель Neff T26DA49N0R" class="special-offers__text  catalog__text">Варочная
+							панель Neff T26DA49N0R</a>
+
+						<div class="special-offers__sale catalog__sale">
+
+							<span class="special-offers__price catalog__price ">
+
+								32 990 <i class="special-offers__rub catalog__rub">руб.</i>
+							</span>
+
+							<a href="" title="купить" class="js-add2basket special-offers__buy"
+								data-id="3626">купить</a>
+
+						</div>
+
+						<!-- begin label -->
+						<div class="announcing">
+
+						</div>
+						<!-- end label -->
+
+					</div>
+
+				</div>
+				<!-- If we need pagination -->
+
+				<!-- If we need navigation buttons -->
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+			</div>
+			<div class="swiper-pagination_2 swiper-pagination-clickable swiper-pagination-bullets"><span
+					class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+					aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+					aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+					aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+					aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+					aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+					aria-label="Go to slide 6"></span></div>
+			<div class="swiper-button-prev special-offers_prev swiper-button-disabled" tabindex="0" role="button"
+				aria-label="Previous slide" aria-disabled="true"></div>
+			<div class="swiper-button-next special-offers_next" tabindex="0" role="button" aria-label="Next slide"
+				aria-disabled="false"></div>
+		</div>
+	</div>
+
+	<div class="catalog__description description">
+
+	</div>
+
+	<div class="sidebar">
+
+		<div class="download-catalogs">
+			<div class="download-catalogs__title">Скачать каталоги</div>
+			<div
+				class="download-catalogs__items swiper-container js-download-catalogs swiper-container-horizontal swiper-container-multirow">
+				<div class="swiper-wrapper" style="transition-duration: 0ms;">
+					<div class="download-catalogs__item swiper-slide" id="bx_3302092990_6294">
+						<a href="/upload/iblock/16a/16a2326968a0dbc67bb4c01b5e7fcb38.pdf" title="Каталог Neff 2019"
+							class="download-catalogs__link" target="_blank">
+							<div class="download-catalogs__pic">
+								<img class="lazyload"
+									data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/b8a/74_74_0/b8a378ee2bfc038d97b29d6b531d1817.jpg"
+									alt="Каталог Neff 2019">
+							</div>
+							<div class="download-catalogs__text">
+								Каталог Neff 2019 <i>pdf, 19.19 MB</i>
+							</div>
+						</a>
+					</div>
+
+					<div class="download-catalogs__item swiper-slide" id="bx_3302092990_6295">
+						<a href="/upload/iblock/ebf/ebfb3c211106b503f9bd405980252450.pdf" title="Каталог Neff 2018"
+							class="download-catalogs__link" target="_blank">
+							<div class="download-catalogs__pic">
+								<img class="lazyload"
+									data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/1a7/74_74_0/1a72a04db53194f7932dcb4c7489b71c.jpg"
+									alt="Каталог Neff 2018">
+							</div>
+							<div class="download-catalogs__text">
+								Каталог Neff 2018 <i>pdf, 39.37 MB</i>
+							</div>
+						</a>
+					</div>
+
+				</div>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+			</div>
+		</div>
+
+		<div class="documentation">
+			<span class="documentation__title">Инструкции для Liebherr</span>
+
+			<a href="/upload/iblock/026/026fe8ad22c6a0e4e69af89c1cab2347.jpg" title="Схема встраивания" target="_blank"
+				class="doc_loading doc_loading_first">
+				<i class="icon_doc"></i>
+				<span>Варочная панель Neff T29TA79N0, схема встраивания</span>
+				jpg, 159.52 KB </a>
+
+			<a href="/upload/iblock/083/08394cb9d4738f0682242f34e1736198.pdf" title="Инструкция на русском языке"
+				target="_blank" class="doc_loading doc_loading_first">
+				<i class="icon_doc"></i>
+				<span>Индукционная варочная панель Neff T55T53X2, инструкция на русском языке</span>
+				pdf, 1.11 MB </a>
+
+			<a href="/upload/iblock/c2a/c2a851f56e8f09724a5e9e6407516cc6.jpg" title="Схема для встраивания"
+				target="_blank" class="doc_loading doc_loading_first">
+				<i class="icon_doc"></i>
+				<span>Варочная панель Neff T26CA52S0, схема для встраивания</span>
+				jpg, 71.18 KB </a>
+
+			<a href="/technical-documentation/" title="Посмотреть все инструкции" class="documentation__link">Посмотреть
+				все инструкции</a>
+		</div>
+
+		<ul class="work-link">
+
+			<li class="work-link__item">
+				<a href="/guarantee/#services-list" title="Сервисные центры" class="work-link__a">Сервисные центры</a>
+			</li>
+
+			<li class="work-link__item">
+				<a href="/technical-documentation/" title="Техническая документация" class="work-link__a">Техническая
+					документация</a>
+			</li>
+
+			<li class="work-link__item">
+				<a href="/guarantee/" title="Гарантия Neff" class="work-link__a">Гарантия Neff</a>
+			</li>
+
+		</ul>
+
+		<div class="yandex">
+			<div class="yandex__inner">
+				<div class="yandex__logo">
+					<img src="https://neff.ret-team.ru/mockup/templates/main/build/images/ylogo.png" alt="" class="yandex__img">
+				</div>
+				<div class="yandex__ratings">
+					<img src="https://neff.ret-team.ru/mockup/templates/main/build/images/5-stars.png" alt="">
+				</div>
+				<a href="https://market.yandex.ru/shop/394451/reviews/add?retpath=https%3A%2F%2Fmarket.yandex.ru%2Fshop%2F394451%2Freviews&amp;track=rev_sh"
+					target="_blank" class="yandex__button">Оставить отзыв</a>
+				<a href=" https://market.yandex.ru/shop/394451/reviews" target="_blank" class="yandex__button">Читать
+					все отзывы</a>
+			</div>
+		</div>
+		<div class="quality">
+			<span class="quality__title">Контроль качества</span>
+			<span class="quality__text">Номер для претензий и предложений:</span>
+			<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
+			<span class="quality__worktime">с 9:00 до 18:00 по будням</span>
+			<a href="/kachestvo/" class="quality__button">Написать</a>
+		</div>
+
+	</div>
+
 </div>
