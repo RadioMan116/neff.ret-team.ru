@@ -1228,7 +1228,23 @@ $(document).ready(function () {
 
 			// firstDropdownMenu.classList.add("active");
 		})();
+		var mySwiper444 = new Swiper(".category-container", {
 
+			allowTouchMove: true,
+			slidesPerView: 2,
+			slidesPerColumn: 1,
+			spaceBetween: 24,
+			pagination: {
+				el: ".category-pagination",
+				clickable: true
+			},
+			breakpoints: {
+				560: {
+					slidesPerView: 1,
+				}
+			},
+
+		});
 
 	}
 	$(".js-comparison__select").click(function () {
@@ -2267,6 +2283,7 @@ $(window).on('load', function () {
 					console.log($(this).text())
 				}
 			});
+
 		}
 		$('.comparison__main .characteristic__row').each(function (index, el) {
 			if ($(this).text().length > 60) {
