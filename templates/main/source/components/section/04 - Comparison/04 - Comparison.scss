@@ -421,13 +421,14 @@
 	.modal__close {
 		position: absolute;
 		width: 12px;
-		height: 16px;
-		top: 20px;
-		right: 15px;
+		height: 14px;
+		top: 15px;
+		right: 10px;
 		color: #b0b0b0;
 		font-size: 20px;
 		background: url("../images/comparison-delete-2.png") no-repeat;
 		color: transparent;
+		background-size: contain;
 	}
 
 	.swiper__comparison {
