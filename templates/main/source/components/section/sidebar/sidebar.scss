@@ -298,6 +298,8 @@
 		&__items {
 			display: flex;
 			flex-direction: column;
+			max-height: unset;
+			padding-bottom: 14px;
 		}
 
 		// .articles__item
@@ -314,13 +316,13 @@
 
 				.articles__info {
 
-					&:after {
-						display: none;
-					}
+					// &:after {
+					// 	display: none;
+					// }
 				}
 
 				.articles__pic:after {
-					display: none;
+					bottom: -12px;
 				}
 
 			}
