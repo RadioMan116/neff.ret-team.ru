@@ -309,6 +309,21 @@
 			&:last-child {
 				margin-bottom: 12px;
 			}
+
+			&:hover {
+
+				.articles__info {
+
+					&:after {
+						display: none;
+					}
+				}
+
+				.articles__pic:after {
+					display: none;
+				}
+
+			}
 		}
 
 		// .articles__pic
