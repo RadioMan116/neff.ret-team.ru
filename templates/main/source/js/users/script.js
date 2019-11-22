@@ -1568,6 +1568,19 @@ $(document).ready(function () {
 				e.preventDefault();
 			});
 			$('.js-compare_block-change.active').parent().addClass('order');
+			if ($('.comparison__link')) {
+				$('.comparison__list').each(function () {
+					let category = $(this).find('.comparison__link');
+					if (category.hasClass('active')) {
+						$(this).parent().addClass('order');
+					} else {
+						$('.comparison__list .comparison__item:eq(0)').addClass('order');
+					}
+				})
+				// if (select.hasClass('active')) {
+				// 	console.log('1')
+				// }
+			}
 			window.onload = function () {
 				// $('.comparison__main .characteristic__row').each(function (index, el) {
 				// 	var height = $('.swiper-container-comparison .characteristic__row').eq(index).height();
