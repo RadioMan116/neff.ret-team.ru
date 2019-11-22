@@ -91,6 +91,12 @@
 			}
 
 		}
+
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
 	}
 
 	// .site-map__link
@@ -110,6 +116,7 @@
 		a {
 			color: inherit;
 		}
+
 	}
 
 	// .site-map__category
@@ -145,6 +152,20 @@
 			margin-top: -2.5px;
 			border-radius: 50%;
 			z-index: 1;
+		}
+
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+
+		.site-map__items {
+			width: 100%;
 		}
 	}
 }
