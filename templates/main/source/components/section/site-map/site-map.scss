@@ -3,6 +3,10 @@
 
 	* {
 		transition: 0.3s;
+
+		a {
+			color: inherit;
+		}
 	}
 
 	// .site-map__items
@@ -101,6 +105,10 @@
 
 		&:before {
 			content: "	∙ ";
+		}
+
+		a {
+			color: inherit;
 		}
 	}
 
