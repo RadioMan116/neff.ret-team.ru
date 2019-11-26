@@ -1270,6 +1270,7 @@ $(document).ready(function () {
 
 			console.log($(this))
 		});
+		let openMenu = document.querySelector('nav.dropdown-menu').classList.add('active');
 
 	}
 	(function () {
