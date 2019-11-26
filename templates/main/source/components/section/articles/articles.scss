@@ -90,7 +90,8 @@
 			}
 
 			.articles__pic:after {
-				display: block;
+				// display: block;
+				display: none;
 			}
 
 		}
@@ -110,19 +111,19 @@
 			width: 100%;
 		}
 
-		&:after {
-			color: #2e4d8a;
-			font-size: 14px;
-			font-weight: 700;
-			line-height: 17px;
-			text-decoration: underline;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			content: ('Читать далее');
-			display: none;
-		}
+		// &:after {
+		// 	color: #2e4d8a;
+		// 	font-size: 14px;
+		// 	font-weight: 700;
+		// 	line-height: 17px;
+		// 	text-decoration: underline;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	content: ('Читать далее');
+		// 	display: none;
+		// }
 	}
 
 	&__img {
