@@ -6,7 +6,7 @@
 	&__link {
 		text-decoration: none;
 		display: block;
-		width: 168px;
+		width: auto;
 	}
 
 	&__pic {
@@ -20,7 +20,7 @@
 		position: unset;
 		order: -1;
 		width: 117px;
-		height: 27px;
+		height: 40px;
 		display: flex;
 
 		.logo__link {

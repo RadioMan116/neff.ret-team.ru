@@ -417,6 +417,7 @@
 				flex-basis: unset;
 				margin-left: auto;
 				justify-content: space-around;
+				align-self: center;
 			}
 
 			&__favorite,
@@ -570,7 +571,7 @@
 
 		.hamburger {
 			display: block;
-			margin-right: 21px;
+			margin-right: 16px;
 			margin-top: 0;
 
 			&__img {
