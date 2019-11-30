@@ -99,7 +99,7 @@
 
 		}
 
-		&__link {
+		&__link,&__text {
 			font-family: 'Roboto Condensed', sans-serif;
 			font-size: 16px;
 			font-weight: normal;
@@ -159,7 +159,7 @@
 					background-position: 21px 18px !important;
 				}
 
-				&:last-child {
+				&.banner {
 					padding-left: 26px;
 					padding-right: 55px;
 

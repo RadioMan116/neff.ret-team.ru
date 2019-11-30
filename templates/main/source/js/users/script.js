@@ -740,8 +740,6 @@ $(document).ready(function () {
 		});
 		document.querySelectorAll('.dropdown-menu__item').forEach(element=>{
 			let url = element.getAttribute('data-bg');
-			console.log(url)
-			// element.style.background = "url('img_tree.png')" ;
 			element.style.background = `url('${url}')`;
 		})
 	});
