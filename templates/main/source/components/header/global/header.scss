@@ -38,7 +38,7 @@
 		}
 
 		&_bottom {
-			height: 74px;
+			height: 71px;
 			color: white;
 			flex-wrap: wrap;
 			position: relative;
@@ -77,7 +77,7 @@
 		display: flex;
 		align-items: center;
 		margin-left: auto;
-		flex-grow: 1;
+		// flex-grow: 1;
 		margin-left: 14px;
 
 		.telephones {
@@ -98,6 +98,7 @@
 		color: #333333;
 		white-space: nowrap;
 		text-decoration: none !important;
+
 	}
 
 	&__call-phone-button {
@@ -120,6 +121,7 @@
 		text-transform: uppercase;
 		display: flex;
 		white-space: nowrap;
+		margin-right: 35px;
 
 		&:hover {
 			text-decoration: unset;
@@ -220,7 +222,7 @@
 		width: 24px;
 		height: 100%;
 		display: flex;
-		margin-right: 24px;
+		margin-right: 37px;
 		cursor: pointer;
 
 		&:before {
@@ -262,7 +264,7 @@
 			width: 20px;
 			height: 100%;
 			flex-shrink: 0;
-			margin-right: 4px;
+			margin-right: 13px;
 			background-size: contain !important;
 			background-position: center center !important;
 		}
@@ -275,7 +277,7 @@
 			background: url("../images/header-fav.svg") no-repeat;
 		}
 
-		margin-right: 25px;
+		margin-right: 33px;
 
 		&:hover {
 
@@ -294,7 +296,7 @@
 			background: url("../images/header-compare.svg") no-repeat;
 		}
 
-		margin-right: 25px;
+		margin-right: 38px;
 
 		&:hover {
 
@@ -310,10 +312,10 @@
 
 	&__basket {
 		&:before {
-			background: url("../images/shopping-cart.svg") no-repeat;
+			background: url("../images/shopping-cart-head.svg") no-repeat;
 		}
 
-		margin-right: 13px;
+		margin-right: 0px;
 
 		&-open,
 		&:hover {
