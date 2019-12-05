@@ -373,9 +373,7 @@ picture {
 	.btn-sub3 {}
 
 	.js-go {}
-	&.order {
-		order: -4;
-	}
+
 	@media screen and (max-width: 767px){
 
 			flex-direction: column;
@@ -384,7 +382,9 @@ picture {
 			margin: 0 -16px;
 			width: auto;
 			padding: 16px;
-
+			&.order {
+				order: -4;
+			}
 
 			&__items {
 				width: auto;
