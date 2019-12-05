@@ -3750,6 +3750,7 @@
 		&__link {
 			color: #394791;
 			margin: 5px 0;
+			cursor:pointer;
 
 			&:before {
 				content: ' ∙ ';
@@ -5549,7 +5550,7 @@
 		}
 
 		.discount-system {
-			margin: 0 -16px;
+			margin: 0 -16px 13px;
 			width: auto;
 
 			.discount-system__text {

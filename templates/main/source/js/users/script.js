@@ -422,6 +422,7 @@ $(document).ready(function () {
 					slidesPerView: 1.3,
 					slidesPerGroup: 1,
 					spaceBetween: 16,
+					allowTouchMove: true,
 
 				},
 
