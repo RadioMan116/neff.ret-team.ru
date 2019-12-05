@@ -373,6 +373,9 @@ picture {
 	.btn-sub3 {}
 
 	.js-go {}
+	&.order {
+		order: -4;
+	}
 	@media screen and (max-width: 767px){
 
 			flex-direction: column;
