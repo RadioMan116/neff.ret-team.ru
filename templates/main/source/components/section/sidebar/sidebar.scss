@@ -874,8 +874,9 @@
 	}
 
 	.swiper-pagination-download-catalogs {
-		padding: 10px 10px 19px;
+		padding: 10px 10px 10px;
 		width: auto;
+		bottom: 10px;
 
 		.swiper-pagination-bullet {
 			margin: 0 16px 0 0;
@@ -885,7 +886,7 @@
 	.download-catalogs__next {
 		background: url("../images/special-offers_next.png") 0/24px no-repeat;
 		top: unset;
-		bottom: 16px;
+		bottom: 10px;
 		right: 16px;
 		width: 24px;
 		height: 24px;
@@ -899,7 +900,7 @@
 		background: url("../images/special-offers_prev.png") 0/24px no-repeat;
 		position: absolute;
 		top: unset;
-		bottom: 16px;
+		bottom: 10px;
 		right: 49px;
 		left: unset;
 		width: 24px;
