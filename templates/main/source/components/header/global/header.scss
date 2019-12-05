@@ -430,6 +430,10 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
+
+				&:before {
+					margin-right: 4px;
+				}
 			}
 
 
