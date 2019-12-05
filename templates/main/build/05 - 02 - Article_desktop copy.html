@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Neff" class="menu__link">Сервисные центры Neff</a>
+								</li>
+								<li class="menu__item">
+									<a href="/articles/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+								<li class="menu__item">
+									<a href="/neff/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
+						</div>
+						<!--end menu-->
+
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовая техника NEFF</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='/images/neff-menu-1.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Духовые шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Полноразмерные духовые шкафы
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Компактные духовые шкафы
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-2.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Варочные панели</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Газовые варочные панели
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Электрические варочные панели
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Индукционные варочные панели
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Варочные панели Домино
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-3.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Вытяжки</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Встраиваемые вытяжки в шкаф
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Настенные вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Островные вытяжки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Выстраиваемые вытяжки в столешницу
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-4.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Посудомоечные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Посудомоечные машины 45 см
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Посудомоечные машины 60 см
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-5.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Компактные приборы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Пароварки
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Микроволновые печи
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Кофемашины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Подогреватели
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Вакууматоры
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-6.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Встраиваемые холодильники
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие холодильники
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Морозильники
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-7.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Стиральные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Стиральные машины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Стирально-сушильные машины
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg="background: url('images/neff-menu-8.png');">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Аксессуары</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Для варочных панелей
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для вытяжек
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для духовых шкафов
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для посудомоечных машин
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для холодильников
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<img src="images/neff-banner.png" alt="">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">
+												Получите
+												<b>Лучшее предложение!</b>
+											</a>
+
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#" title="Новинки">Новинки</a>
+								</span>
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#" title="Лидеры продаж">Лидеры продаж</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:74959297015" class="header__phone">+7 495 929-70-15</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@nf-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@nf-rus.ru</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<div class="breadcrumbs">
+						<div itemscope itemtype="http://schema.org/BreadcrumbList">
+							<div class="breadcrumbs__link" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a href="/" title="Главная" itemprop="item">
+									<span itemprop="name">Neff</span>
+								</a>
+								<meta itemprop="position" content="1" />
+							</div>
+							<div class="breadcrumbs__sep">»</div>
+							<div class="breadcrumbs__link" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a href="/articles/" title="Акции и статьи" itemprop="item">
+									<span itemprop="name">Акции и статьи</span>
+								</a>
+								<meta itemprop="position" content="2" />
+							</div>
+							<div class="breadcrumbs__sep">»</div>
+							<div class="breadcrumbs__link" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<span itemprop="name">Как выбрать микроволновую печь Neff</span>
+								<a itemprop="item" href="/articles/kak-vybrat-mikrovolnovuyu-pech-neff.html" title="Как выбрать микроволновую печь Neff"></a>
+								<meta itemprop="position" content="3" />
+							</div>
+						</div>
+					</div>
+
+					<h1 class="title">Как выбрать микроволновую печь Neff</h1>
+
+					<div class="articles articles-main" id="bx_1878455859_">
+
+						<div class="articles-main__section">
+
+							<div class="articles-main__info">
+								<p>Встраиваемые микроволновые печи Neff продолжают линейку техники для кухни от&nbsp;известного немецкого бренда. С&nbsp;помощью данных моделей можно не&nbsp;только разогреть готовые блюда, но&nbsp;и&nbsp;приготовить повседневный или праздничный
+									обед. Подробнее о&nbsp;том, на&nbsp;что обратить внимание при покупке прибора такого типа,&nbsp;&mdash; в&nbsp;нашей статье.</p>
+								<h2>Критерии выбора встраиваемых микроволновок neff</h2>
+								<p>Рассмотрим основные критерии выбора микроволновых печей Neff:</p>
+								<p>При выборе микроволновой печи одним из&nbsp;основных факторов выбора является ее&nbsp;стоимость. Здесь работает закономерность, чем дороже печь, тем больше у&nbsp;нее функций.</p>
+								<p><b>Объем рабочей камеры. </b> Микроволновки с&nbsp;камерой до&nbsp;17&nbsp;л подойдут только для разогрева пищи. Для семьи, состоящей из&nbsp;3-4&nbsp;человек, лучше будет обратить внимание на&nbsp;
+									<b>Neff H12WE60N, Neff H12WE60S, Neff H12WE60S0</b> . У&nbsp;них объем камеры составляет 25&nbsp;л, что является вполне оптимальным показателем, как для приготовления пищи, так и&nbsp;для разогрева блюд для большой семьи.</p>
+								<p><b>Мощность</b>&nbsp;&mdash; чем она выше, тем скорее протекает процесс создания кулинарного шедевра. Микроволновая печь <b>Neff H11WE60N0</b> выдает мощность 1270&nbsp;Вт. К&nbsp;примеру, при мощности в&nbsp;600&nbsp;Вт запекание курицы займет
+									25-30&nbsp;минут. Есть возможность регулировать уровень мощности, понижая или увеличивая его. При выборе стоит обратить внимание и&nbsp;на&nbsp;такой фактор как энергетические затраты. Чем больше объем камеры, тем больше должна быть и&nbsp;мощность
+									модели.</p>
+								<p><b>Тип управления</b>&nbsp;&mdash; самым привычным является механическое. Поворотные переключатели, которые задают мощность и&nbsp;время разогрева, наиболее просты в&nbsp;использовании. При наличии дополнительных функций управление усложняется.
+									Но&nbsp;благодаря программатору и&nbsp;сенсорным кнопкам эксплуатация прибора становится легкой и&nbsp;понятной. Дисплей показывает время приготовления, выбранную мощность, что позволяет без труда ориентироваться в&nbsp;работе микроволновки.</p>
+								<p><b>Функционал</b>&nbsp;&mdash; это один из&nbsp;важнейших факторов выбора. В&nbsp;модели <b>Neff C17WR01N
+				</b> использована инверторная технология, что позволяет сохранять питательные вещества и&nbsp;витамины. Наличие 7&nbsp;автоматических программ дает возможность приготовления практически любых блюд. В&nbsp;микроволновке <b>Neff C17WR00N</b> доступно 5&nbsp;режимов
+									мощности и&nbsp;7&nbsp;программ.</p>
+							</div>
+						</div>
+
+						<div class="articles__items">
+							<span class="articles__title">Другие новости</span>
+
+							<div class="articles__item" id="bx_3218110189_4206">
+
+								<a class="articles__pic" href="/articles/posudomoechnaya-mashina-neff-s513g40x0r-instruktsiya-po-ekspluatatsii.html" title="Посудомоечная машина Neff S513G40X0R – инструкция по эксплуатации">
+									<img data-src="https://neff.ret-team.ru/upload/iblock/97e/97e5266073d9edcf252c1141e9eec9cb.jpg" data-srcset="/upload/iblock/97e/97e5266073d9edcf252c1141e9eec9cb.jpg 2x,/upload/iblock/97e/97e5266073d9edcf252c1141e9eec9cb.jpg 3x" class="articles__img lazyload"
+									/>
+								</a>
+								<a href="/articles/posudomoechnaya-mashina-neff-s513g40x0r-instruktsiya-po-ekspluatatsii.html" title="Посудомоечная машина Neff S513G40X0R – инструкция по эксплуатации" class="articles__text">Посудомоечная машина Neff S513G40X0R – инструкция по эксплуатации</a>
+								<span class="articles__date">30 Сентября 2018</span>
+							</div>
+
+							<div class="articles__item" id="bx_3218110189_4205">
+
+								<a class="articles__pic" href="/articles/instruktsiya-po-ekspluatatsii-posudomoechnoy-mashiny-neff-.html" title="Инструкция по эксплуатации посудомоечной машины Neff">
+									<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/0c9/272_168_2/0c9c24dca399e30b81acac866469cfbe.jpg" data-srcset="/upload/resize_cache/iblock/0c9/272_168_2/0c9c24dca399e30b81acac866469cfbe.jpg 2x,/upload/resize_cache/iblock/0c9/272_168_2/0c9c24dca399e30b81acac866469cfbe.jpg 3x"
+									class="articles__img lazyload" />
+								</a>
+								<a href="/articles/instruktsiya-po-ekspluatatsii-posudomoechnoy-mashiny-neff-.html" title="Инструкция по эксплуатации посудомоечной машины Neff" class="articles__text">Инструкция по эксплуатации посудомоечной машины Neff</a>
+								<span class="articles__date">1 Августа 2018</span>
+							</div>
+
+							<div class="articles__item" id="bx_3218110189_4204">
+
+								<a class="articles__pic" href="/articles/kak-razblokirovat-varochnuyu-panel-neff.html" title="Как разблокировать варочную панель Neff">
+									<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/5a3/272_168_2/5a316544777484cb2845f69e91f4b6e1.jpg" data-srcset="/upload/resize_cache/iblock/5a3/272_168_2/5a316544777484cb2845f69e91f4b6e1.jpg 2x,/upload/resize_cache/iblock/5a3/272_168_2/5a316544777484cb2845f69e91f4b6e1.jpg 3x"
+									class="articles__img lazyload" />
+								</a>
+								<a href="/articles/kak-razblokirovat-varochnuyu-panel-neff.html" title="Как разблокировать варочную панель Neff" class="articles__text">Как разблокировать варочную панель Neff</a>
+								<span class="articles__date">28 Июня 2018</span>
+							</div>
+
+							<div class="articles__item" id="bx_3218110189_4203">
+
+								<a class="articles__pic" href="/articles/novinki-ot-neff.html" title="Новинки от Neff">
+									<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/fcf/272_168_2/fcf330880c7dc7a36422e596c0a78265.jpg" data-srcset="/upload/resize_cache/iblock/fcf/272_168_2/fcf330880c7dc7a36422e596c0a78265.jpg 2x,/upload/resize_cache/iblock/fcf/272_168_2/fcf330880c7dc7a36422e596c0a78265.jpg 3x"
+									class="articles__img lazyload" />
+								</a>
+								<a href="/articles/novinki-ot-neff.html" title="Новинки от Neff" class="articles__text">Новинки от Neff</a>
+								<span class="articles__date">4 Мая 2018</span>
+							</div>
+						</div>
+
+						<div class="special-offers similar-models articles-main__slider">
+							<!-- Slider main container -->
+							<div class="special-offers">
+								<div class="container">
+									<span class="special-offers__title">Рекомендованные товары</span>
+									<!-- Slider main container -->
+									<div class="swiper-container swiper-container-two">
+										<!-- Additional required wrapper -->
+										<div class="swiper-wrapper special-offers__wrapper js-ecom_product-list" data-list="Article Detail">
+
+											<div class="catalog__item swiper-slide js-ecom_product-item" data-id="3656" id="bx_3589829689_3656">
+												<a class="catalog__pic" href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60n0.html" title="Микроволновая печь Neff H12WE60N0">
+													<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/cce/205_205_1/cceb389342d3cff430b4e4d5ca8d0b98.jpg" data-srcset="/upload/resize_cache/iblock/cce/410_410_1/cceb389342d3cff430b4e4d5ca8d0b98.jpg 2x,/upload/resize_cache/iblock/cce/615_615_1/cceb389342d3cff430b4e4d5ca8d0b98.jpg 3x"
+													class="special-offers__img catalog__img lazyload" />
+												</a>
+												<a href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60n0.html" title="Микроволновая печь Neff H12WE60N0" class="special-offers__text catalog__text">Микроволновая печь Neff H12WE60N0</a>
+												<span class="catalog__presence">Снят с производства</span>
+
+												<div class="catalog__specification">
+
+												</div>
+
+												<div class="catalog__prop">
+												</div>
+
+												<div class="special-offers__sale catalog__sale">
+
+												</div>
+												<div class="catalog__existence">
+
+													<a href="#" class="catalog__simile"></a>
+													<a href="#" class="catalog__favorite"></a>
+													<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+												</div>
+
+												<div itemscope itemtype="http://schema.org/Product" class="hide">
+
+													<meta itemprop="name" content="Микроволновая печь Neff H12WE60N0" />
+
+													<img itemprop="image" src="https://neff.ret-team.ru/upload/resize_cache/iblock/cce/615_615_1/cceb389342d3cff430b4e4d5ca8d0b98.jpg" />
+
+													<meta itemprop="brand" content="Neff" />
+
+													<meta itemprop="description" content="Микроволновая печь Neff H12WE60N0" />
+
+													<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+														<meta itemprop="price" content="26990" />
+														<meta itemprop="priceCurrency" content="RUB" />
+
+														<meta itemprop="availability" content="http://schema.org/" />
+														<meta itemprop="url" content="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60n0.html" />
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="catalog__item swiper-slide js-ecom_product-item" data-id="3657" id="bx_3589829689_3657">
+												<a class="catalog__pic" href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60s0.html" title="Микроволновая печь Neff H12WE60S0">
+													<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/cc3/205_205_1/cc372c3f6bd3013dcc069f6d701efbb3.jpg" data-srcset="/upload/resize_cache/iblock/cc3/410_410_1/cc372c3f6bd3013dcc069f6d701efbb3.jpg 2x,/upload/resize_cache/iblock/cc3/615_615_1/cc372c3f6bd3013dcc069f6d701efbb3.jpg 3x"
+													class="special-offers__img catalog__img lazyload" />
+												</a>
+												<a href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60s0.html" title="Микроволновая печь Neff H12WE60S0" class="special-offers__text catalog__text">Микроволновая печь Neff H12WE60S0</a>
+												<span class="catalog__presence">Снят с производства</span>
+
+												<div class="catalog__specification">
+
+												</div>
+
+												<div class="catalog__prop">
+												</div>
+
+												<div class="special-offers__sale catalog__sale">
+
+												</div>
+												<div class="catalog__existence">
+
+													<a href="#" class="catalog__simile active"></a>
+													<a href="#" class="catalog__favorite active"></a>
+													<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+												</div>
+
+												<div itemscope itemtype="http://schema.org/Product" class="hide">
+
+													<meta itemprop="name" content="Микроволновая печь Neff H12WE60S0" />
+
+													<img itemprop="image" src="https://neff.ret-team.ru/upload/resize_cache/iblock/cc3/615_615_1/cc372c3f6bd3013dcc069f6d701efbb3.jpg" />
+
+													<meta itemprop="brand" content="Neff" />
+
+													<meta itemprop="description" content="Микроволновая печь Neff H12WE60S0" />
+
+													<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+														<meta itemprop="price" content="26990" />
+														<meta itemprop="priceCurrency" content="RUB" />
+
+														<meta itemprop="availability" content="http://schema.org/" />
+														<meta itemprop="url" content="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h12we60s0.html" />
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="catalog__item swiper-slide js-ecom_product-item" data-id="3659" id="bx_3589829689_3659">
+												<a class="catalog__pic" href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr00n0.html" title="Микроволновая печь Neff C17WR00N0">
+													<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/533/205_205_1/53330217afb4aca297e2a30252b11dbe.jpg" data-srcset="/upload/resize_cache/iblock/533/410_410_1/53330217afb4aca297e2a30252b11dbe.jpg 2x,/upload/iblock/533/53330217afb4aca297e2a30252b11dbe.jpg 3x"
+													class="special-offers__img catalog__img lazyload" />
+												</a>
+												<a href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr00n0.html" title="Микроволновая печь Neff C17WR00N0" class="special-offers__text catalog__text">Микроволновая печь Neff C17WR00N0</a>
+												<span class="catalog__presence">В наличии</span>
+
+												<div class="catalog__specification">
+
+												</div>
+
+												<div class="catalog__prop">
+												</div>
+
+												<div class="special-offers__sale catalog__sale">
+
+													<span class="special-offers__price catalog__price ">
+
+														62 990
+														<i class="special-offers__rub catalog__rub">руб.</i>
+													</span>
+
+													<a href="" title="купить" class="js-add2basket special-offers__buy" data-id="3659">купить</a>
+
+												</div>
+												<div class="catalog__existence">
+
+													<a href="" class="catalog__simile js-compare " data-id="3659">Сравнить</a>
+													<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="3659">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+												</div>
+
+												<!-- begin label -->
+												<div class="announcing">
+
+												</div>
+												<!-- end label -->
+
+												<div itemscope itemtype="http://schema.org/Product" class="hide">
+
+													<meta itemprop="name" content="Микроволновая печь Neff C17WR00N0" />
+
+													<img itemprop="image" src="https://neff.ret-team.ru/upload/iblock/533/53330217afb4aca297e2a30252b11dbe.jpg" />
+
+													<meta itemprop="brand" content="Neff" />
+
+													<meta itemprop="description" content="Микроволновая печь Neff C17WR00N0" />
+
+													<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+														<meta itemprop="price" content="62990" />
+														<meta itemprop="priceCurrency" content="RUB" />
+
+														<meta itemprop="availability" content="http://schema.org/" />
+														<meta itemprop="url" content="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr00n0.html" />
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="catalog__item swiper-slide js-ecom_product-item" data-id="3655" id="bx_3589829689_3655">
+												<a class="catalog__pic" href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h11we60n0.html" title="Микроволновая печь Neff H11WE60N0">
+													<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/e77/205_205_1/e777192b845f0bc11bd513afe39c80ce.jpg" data-srcset="/upload/resize_cache/iblock/e77/410_410_1/e777192b845f0bc11bd513afe39c80ce.jpg 2x,/upload/resize_cache/iblock/e77/615_615_1/e777192b845f0bc11bd513afe39c80ce.jpg 3x"
+													class="special-offers__img catalog__img lazyload" />
+												</a>
+												<a href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h11we60n0.html" title="Микроволновая печь Neff H11WE60N0" class="special-offers__text catalog__text">Микроволновая печь Neff H11WE60N0</a>
+												<span class="catalog__presence">Снят с производства</span>
+
+												<div class="catalog__specification">
+
+												</div>
+
+												<div class="catalog__prop">
+												</div>
+
+												<div class="special-offers__sale catalog__sale">
+
+												</div>
+												<div class="catalog__existence">
+
+													<a href="#" class="catalog__simile active"></a>
+													<a href="#" class="catalog__favorite active"></a>
+													<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+												</div>
+												<div itemscope itemtype="http://schema.org/Product" class="hide">
+
+													<meta itemprop="name" content="Микроволновая печь Neff H11WE60N0" />
+
+													<img itemprop="image" src="https://neff.ret-team.ru/upload/resize_cache/iblock/e77/615_615_1/e777192b845f0bc11bd513afe39c80ce.jpg" />
+
+													<meta itemprop="brand" content="Neff" />
+
+													<meta itemprop="description" content="Микроволновая печь Neff H11WE60N0" />
+
+													<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+														<meta itemprop="price" content="23990" />
+														<meta itemprop="priceCurrency" content="RUB" />
+
+														<meta itemprop="availability" content="http://schema.org/" />
+														<meta itemprop="url" content="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-h11we60n0.html" />
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="catalog__item swiper-slide js-ecom_product-item" data-id="3660" id="bx_3589829689_3660">
+												<a class="catalog__pic" href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr01n0.html" title="Микроволновая печь Neff C17WR01N0">
+													<img data-src="https://neff.ret-team.ru/upload/resize_cache/iblock/4e5/205_205_1/4e56ba4350e03bfca653a0c85e318640.jpg" data-srcset="/upload/resize_cache/iblock/4e5/410_410_1/4e56ba4350e03bfca653a0c85e318640.jpg 2x,/upload/iblock/4e5/4e56ba4350e03bfca653a0c85e318640.jpg 3x"
+													class="special-offers__img catalog__img lazyload" />
+												</a>
+												<a href="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr01n0.html" title="Микроволновая печь Neff C17WR01N0" class="special-offers__text catalog__text">Микроволновая печь Neff C17WR01N0</a>
+												<span class="catalog__presence">В наличии</span>
+
+												<div class="catalog__specification">
+
+												</div>
+
+												<div class="catalog__prop">
+												</div>
+
+												<div class="special-offers__sale catalog__sale">
+
+													<span class="special-offers__price catalog__price ">
+
+														62 990
+														<i class="special-offers__rub catalog__rub">руб.</i>
+													</span>
+
+													<a href="" title="купить" class="js-add2basket special-offers__buy" data-id="3660">купить</a>
+
+												</div>
+												<div class="catalog__existence">
+
+													<a href="" class="catalog__simile js-compare " data-id="3660">Сравнить</a>
+													<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="3660">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+												</div>
+
+												<!-- begin label -->
+												<div class="announcing">
+
+												</div>
+												<!-- end label -->
+
+												<div itemscope itemtype="http://schema.org/Product" class="hide">
+
+													<meta itemprop="name" content="Микроволновая печь Neff C17WR01N0" />
+
+													<img itemprop="image" src="https://neff.ret-team.ru/upload/iblock/4e5/4e56ba4350e03bfca653a0c85e318640.jpg" />
+
+													<meta itemprop="brand" content="Neff" />
+
+													<meta itemprop="description" content="Микроволновая печь Neff C17WR01N0" />
+
+													<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+														<meta itemprop="price" content="62990" />
+														<meta itemprop="priceCurrency" content="RUB" />
+
+														<meta itemprop="availability" content="http://schema.org/" />
+														<meta itemprop="url" content="https://neff.ret-team.ru/neff/mikrovolnovye-pechi/mikrovolnovye-pechi/mikrovolnovaya-pech-neff-c17wr01n0.html" />
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+										<div class="swiper-scrollbar"></div>
+										<!-- If we need pagination -->
+									</div>
+
+									<div class="swiper-pagination_2"></div>
+									<div class="swiper-button-prev special-offers_prev"></div>
+									<div class="swiper-button-next special-offers_next"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="reviews_article">
+						<div class="reviews__top">
+							<div class="reviews__section">
+								<span class="reviews__all">Комментарии 0</span>
+							</div>
+							<a href="#comment_form" class="reviews__link">оставить комментарий</a>
+						</div>
+
+						<form class="add-comment__form js-form" action="" method="post" id="comment_form">
+							<span class="form__title add-comment__title">Комментировать</span>
+							<div class="add-comment__row">
+								<strong class="add-comment__name">Ваш комментарий:
+									<span class="abuse-popup__req callback__req">*</span>
+								</strong>
+								<textarea rows="4" cols="40" name="F[TXT]" placeholder="Ваш комментарий *"></textarea>
+								<span class="add-comment__text">Комментарии публикуются после проверки модераторами. Перед отправкой вашего комментария убедитесь, что он не нарушает правил модерации.</span>
+							</div>
+							<div class="add-comment__row">
+								<strong class="add-comment__name">Ваше имя:
+									<span class="abuse-popup__req callback__req">*</span>
+								</strong>
+								<input type="text" name="F[NAME]" value="" placeholder="Ваше имя *" />
+							</div>
+							<div class="add-comment__row">
+								<strong class="add-comment__name">Email:
+									<span class="abuse-popup__req callback__req">*</span>
+								</strong>
+								<input type="email" name="F[EMAIL]" value="" placeholder="Email *" class="typeEmail" />
+								<span class="add-comment__text">Нажимая кнопку отправить вы соглашаетесь с использованием
+									<a href="/personal-data/" target="_blank">персональных данных</a>
+								</span>
+							</div>
+							<div class="add-comment__item">
+								<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit js-go" />
+								<input type="hidden" value="commentsAdd" name="action" />
+								<input type="hidden" value="4202" name="F[ART_ID]" />
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+
+				<div class="footer__col">
+
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Техника</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/posudomoechnye-mashiny/" title="Посудомоечные машины">Посудомоечные машины</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/varochnye-paneli/" title="Варочные панели">Варочные панели
+								</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/elektricheskie-plity-i-duhovye-shkafy/" title="Духовые шкафы">Духовые шкафы</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/holodilniki/" title="Холодильники">Холодильники</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/mikrovolnovye-pechi/" title="Микроволновые печи">Микроволновые печи</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/kofemashiny/" title="Кофемашины">Кофемашины</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/kukhonnye-vytyazhki/" title="Кухонные вытяжки">Кухонные вытяжки</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/vakuumatory/" title="Вакууматоры">Вакууматоры</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/neff/stiralnye-i-sushilnye-mashiny/" title="Стиральные и сушильные машины">Стиральные и сушильные машины</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<!-- end menu-content -->
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+
+							<li class="menu-footer__item">
+								<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu-footer__link">Доставка и оплата</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/glossary/" title="Глоссарий" class="menu-footer__link">Глоссарий</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/services/" title="Сервис" class="menu-footer__link">Сервис</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/guarantee/" title="Сервисные центры Liebherr" class="menu-footer__link">Сервисные центры Liebherr</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/articles/" title="Статьи" class="menu-footer__link">Статьи</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/video/" title="Видео" class="menu-footer__link">Видео</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/kachestvo/" title="Возврат и обмен" class="menu-footer__link">Возврат и обмен</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/help/" title="Помощь" class="menu-footer__link">Помощь</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/contacts/" title="Контакты" class="menu-footer__link">Контакты</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Neff</div>
+					<a href="tel:74959297015" class="footer__tel">+7 495 929-70-15</a>
+					<a href="tel:78003331936" class="footer__tel">+7 800 333-19-36</a>
+
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback">
+						<span>Заказать звонок
+						</span>
+					</a>
+
+					<a href="mailto:shop@nf-rus.ru" class="footer__email">
+						<i>Email:</i>shop@nf-rus.ru</a>
+
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин NEFF.
+					<br>«NTK LTD TM all rights reserved»
+					<div itemscope itemtype="https://schema.org/LocalBusiness">
+						<div class="hide">
+							<a href="https://neff.ret-team.ru" itemprop="url">
+								<span itemprop="name">Специализированный магазин Neff</span>
+							</a>
+							<img itemprop="logo" src="https://neff.ret-team.ru/mockup/templates/main/build/images/Neff.png" alt="Neff" />
+							<img itemprop="image" src="https://neff.ret-team.ru/mockup/templates/main/build/images/Neff.png" alt="Neff" />
+							<meta itemprop="legalName" content="ООО «НТК Трейд»" />
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59" />
+								<meta itemprop="postalCode" content="123103" />
+								<meta itemprop="addressLocality" content="Москва" />
+							</div>
+							<meta itemprop="PriceRange" content="555-187990RUB" />
+							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00" />
+							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00" />
+							<meta itemprop="telephone" content="74959297015" />
+							<meta itemprop="telephone" content="78003331936" />
+						</div>
+					</div>
+
+				</div>
+				<a href="/sitemap/" class="privacy-policy">Карта сайта</a>
+				<a class="privacy-policy" title="Политика конфиденциальности" href="/personal-data/">Политика конфиденциальности
+				</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="" class="footer__button abuse__button js-viewForm" data-action="guideback">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
