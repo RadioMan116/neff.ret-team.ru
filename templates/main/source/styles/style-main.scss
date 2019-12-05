@@ -93,252 +93,7 @@ h1.title {
 		flex: 0 0 calc(75% - 7px);
 		max-width: calc(75% - 7px);
 	}
-	.newsletter {
-		display: flex;
-		border: 1px solid #ececec;
-		background-color: #ffffff;
-		padding: 17px 24px;
-		width: 100%;
-		margin-bottom: 50px;
 
-		// .newsletter__pic
-
-		&__pic {
-			margin-right: 24px;
-			width: 189px;
-		}
-
-		// .newsletter__items
-
-		&__items {
-			width: calc(100% - 215px);
-		}
-
-		// .newsletter__title
-
-		&__title {
-			color: #333333;
-			font-family: "Roboto Condensed";
-			font-size: 26px;
-			font-weight: 400;
-			line-height: 53px;
-		}
-
-		// .newsletter__subtitle
-
-		&__subtitle {
-			color: #666666;
-			font-family: Arial;
-			font-size: 14px;
-			line-height: 24px;
-			margin-bottom: 23px;
-		}
-
-		// .newsletter__form
-
-		&__form {
-			display: flex;
-			flex-wrap: wrap;
-
-			strong {
-				display: none;
-			}
-
-			input[type="text"],
-			input[type="tel"] {
-				min-height: 46px;
-				border-radius: 2px;
-				border: 1px solid #cbcbcb;
-				background-color: #ffffff;
-				color: #999999;
-				font-family: Arial;
-				font-size: 14px;
-				line-height: 24px;
-			}
-
-			.checkbox__text {
-				a {
-					margin-left: 5px;
-				}
-			}
-		}
-
-		.newslette {
-
-			// .newslette__form
-
-			&__form {
-				display: flex;
-				flex-wrap: wrap;
-
-				input[type="text"],
-				input[type="tel"] {
-					flex-grow: 1;
-					margin-right: 16px;
-					max-width: 319px;
-					padding-left: 16px;
-					padding-right: 16px;
-				}
-
-				input[type="submit"] {
-					margin-left: auto;
-					margin-right: 16px;
-				}
-
-				.abuse-popup__item {
-					margin-bottom: 0;
-				}
-			}
-
-			// .newslette__name
-
-			&__name {}
-
-			// .newslette__req
-
-			&__req {}
-		}
-
-		.js-form {
-
-			// .js-form_page
-
-			&_page {}
-		}
-
-		.abuse-popup {
-
-			// .abuse-popup__name
-
-			&__name {}
-
-			// .abuse-popup__req
-
-			&__req {}
-
-			// .abuse-popup__item
-
-			&__item {}
-
-			// .abuse-popup__submit
-
-			&__submit {}
-		}
-
-		.js-phone {
-
-			// .js-phone_mask
-
-			&_mask {}
-		}
-
-		.checkbox {
-
-			// .checkbox_oferta
-
-			&_oferta {}
-
-			// .checkbox__input
-
-			&__input {}
-
-			// .checkbox__icon
-
-			&__icon {}
-
-			// .checkbox__text
-
-			&__text {}
-		}
-
-		.js-checkbox {}
-
-		.js-check {
-
-			// .js-check_icon
-
-			&_icon {}
-		}
-
-		.noCheck {}
-
-		.btn-sub3 {}
-
-		.js-go {}
-		@media screen and (max-width: 767px){
-
-				flex-direction: column;
-				display: flex;
-				order: 6;
-				margin: 0 -16px;
-				width: auto;
-				padding: 16px;
-
-
-				&__items {
-					width: auto;
-					margin: -30% -2px 0;
-					background: white;
-				}
-
-				.newsletter__title {
-					color: #333333;
-					font-family: "Roboto Condensed";
-					font-size: 18px;
-					font-weight: 400;
-					line-height: 26px;
-					padding: 16px 0 11px;
-					background: white;
-					width: 100%;
-					// margin-top: -26px;
-				}
-
-				.newsletter__subtitle {
-					color: #666666;
-					font-family: Arial;
-					font-size: 14px;
-					line-height: 18px;
-					margin-bottom: 15px;
-				}
-
-				.newsletter__pic {
-					margin-right: 0;
-					width: 100%;
-					overflow: hidden;
-
-					img {
-						margin-top: -14%;
-					}
-				}
-
-				input[type=text],
-				input[type=tel],
-				input[type=submit] {
-					margin-right: 0;
-					width: 100%;
-					max-width: unset;
-				}
-
-				input[type=text] {
-					margin-bottom: 10px;
-				}
-
-				input[type=submit] {
-					order: 4;
-				}
-
-				.checkbox_oferta {
-					width: 100%;
-					margin: 12px 0 15px;
-				}
-
-				.checkbox__text a {
-					margin-left: 5px;
-					margin-right: 5px;
-				}
-
-		}
-	}
 
 }
 
@@ -445,6 +200,252 @@ picture {
 
 .js-news {
 	flex-grow: 1;
+}
+.newsletter {
+	display: flex;
+	border: 1px solid #ececec;
+	background-color: #ffffff;
+	padding: 17px 24px;
+	width: 100%;
+	margin-bottom: 50px;
+
+	// .newsletter__pic
+
+	&__pic {
+		margin-right: 24px;
+		width: 189px;
+	}
+
+	// .newsletter__items
+
+	&__items {
+		width: calc(100% - 215px);
+	}
+
+	// .newsletter__title
+
+	&__title {
+		color: #333333;
+		font-family: "Roboto Condensed";
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 53px;
+	}
+
+	// .newsletter__subtitle
+
+	&__subtitle {
+		color: #666666;
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 23px;
+	}
+
+	// .newsletter__form
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+
+		strong {
+			display: none;
+		}
+
+		input[type="text"],
+		input[type="tel"] {
+			min-height: 46px;
+			border-radius: 2px;
+			border: 1px solid #cbcbcb;
+			background-color: #ffffff;
+			color: #999999;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.checkbox__text {
+			a {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.newslette {
+
+		// .newslette__form
+
+		&__form {
+			display: flex;
+			flex-wrap: wrap;
+
+			input[type="text"],
+			input[type="tel"] {
+				flex-grow: 1;
+				margin-right: 16px;
+				max-width: 319px;
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+
+			input[type="submit"] {
+				margin-left: auto;
+				margin-right: 16px;
+			}
+
+			.abuse-popup__item {
+				margin-bottom: 0;
+			}
+		}
+
+		// .newslette__name
+
+		&__name {}
+
+		// .newslette__req
+
+		&__req {}
+	}
+
+	.js-form {
+
+		// .js-form_page
+
+		&_page {}
+	}
+
+	.abuse-popup {
+
+		// .abuse-popup__name
+
+		&__name {}
+
+		// .abuse-popup__req
+
+		&__req {}
+
+		// .abuse-popup__item
+
+		&__item {}
+
+		// .abuse-popup__submit
+
+		&__submit {}
+	}
+
+	.js-phone {
+
+		// .js-phone_mask
+
+		&_mask {}
+	}
+
+	.checkbox {
+
+		// .checkbox_oferta
+
+		&_oferta {}
+
+		// .checkbox__input
+
+		&__input {}
+
+		// .checkbox__icon
+
+		&__icon {}
+
+		// .checkbox__text
+
+		&__text {}
+	}
+
+	.js-checkbox {}
+
+	.js-check {
+
+		// .js-check_icon
+
+		&_icon {}
+	}
+
+	.noCheck {}
+
+	.btn-sub3 {}
+
+	.js-go {}
+	@media screen and (max-width: 767px){
+
+			flex-direction: column;
+			display: flex;
+			order: 6;
+			margin: 0 -16px;
+			width: auto;
+			padding: 16px;
+
+
+			&__items {
+				width: auto;
+				margin: -30% -2px 0;
+				background: white;
+			}
+
+			.newsletter__title {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				padding: 16px 0 11px;
+				background: white;
+				width: 100%;
+				// margin-top: -26px;
+			}
+
+			.newsletter__subtitle {
+				color: #666666;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 18px;
+				margin-bottom: 15px;
+			}
+
+			.newsletter__pic {
+				margin-right: 0;
+				width: 100%;
+				overflow: hidden;
+
+				img {
+					margin-top: -14%;
+				}
+			}
+
+			input[type=text],
+			input[type=tel],
+			input[type=submit] {
+				margin-right: 0;
+				width: 100%;
+				max-width: unset;
+			}
+
+			input[type=text] {
+				margin-bottom: 10px;
+			}
+
+			input[type=submit] {
+				order: 4;
+			}
+
+			.checkbox_oferta {
+				width: 100%;
+				margin: 12px 0 15px;
+			}
+
+			.checkbox__text a {
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+	}
 }
 
 @media screen and (max-width: 767px) {
