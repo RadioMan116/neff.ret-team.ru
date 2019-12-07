@@ -1389,52 +1389,52 @@ $(document).ready(function () {
 	}
 	$('.filter__slider').draggable();
 	hamburger("js-hamburger", "js-menu");
-	$('.product-card__announcing .announcing__item img').each(function () {
-		var $this = $(this);
-		// $this.parent().append($this.attr('alt'));
-		if ($(this).attr('alt') == 'Бесплатная доставка') {
-			$(this).attr('alt', 'Бесплатная <br> доставка')
-			$(this).attr('title', 'Бесплатная доставка по Москве в пределах МКАД')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Удобная доставка') {
-			$(this).attr('alt', 'Удобная <br> доставка')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Бесплатное подключение') {
-			$(this).attr('alt', 'Бесплатное <br> подключение')
-			$(this).attr('title', 'Бесплатное подключение на готовые коммуникации в пределах МКАД в Москве')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Профессиональное подключение') {
-			$(this).attr('alt', 'Профессиональное <br> подключение')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Лучшее предложение') {
-			$(this).attr('alt', 'Лучшее <br> предложение')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Производство Болгария') {
-			$(this).attr('alt', 'Сделано в <br> Болгарии')
-			$(this).attr('title', 'Сделано в Болгарии')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Производство Австрия') {
-			$(this).attr('alt', 'Сделано в <br> Австрии')
-			$(this).attr('title', 'Сделано в  Австрии')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Производство Германия') {
-			$(this).attr('alt', 'Сделано в <br> Германии')
-			$(this).attr('title', 'Сделано в  Германии')
-			$(this).parent().append($this.attr('alt'));
-		}
-		if ($(this).attr('alt') == 'Производство Array') {
-			$(this).attr('alt', 'Производство <br> Array')
-			$(this).parent().append($this.attr('alt'));
-		}
+	// $('.product-card__announcing .announcing__item img').each(function () {
+	// 	var $this = $(this);
+	// 	// $this.parent().append($this.attr('alt'));
+	// 	if ($(this).attr('alt') == 'Бесплатная доставка') {
+	// 		$(this).attr('alt', 'Бесплатная <br> доставка')
+	// 		$(this).attr('title', 'Бесплатная доставка по Москве в пределах МКАД')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	// if ($(this).attr('alt') == 'Удобная доставка') {
+	// 	// 	$(this).attr('alt', 'Удобная <br> доставка')
+	// 	// 	$(this).parent().append($this.attr('alt'));
+	// 	// }
+	// 	if ($(this).attr('alt') == 'Бесплатное подключение') {
+	// 		$(this).attr('alt', 'Бесплатное <br> подключение')
+	// 		$(this).attr('title', 'Бесплатное подключение на готовые коммуникации в пределах МКАД в Москве')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Профессиональное подключение') {
+	// 		$(this).attr('alt', 'Профессиональное <br> подключение')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Лучшее предложение') {
+	// 		$(this).attr('alt', 'Лучшее <br> предложение')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Производство Болгария') {
+	// 		$(this).attr('alt', 'Сделано в <br> Болгарии')
+	// 		$(this).attr('title', 'Сделано в Болгарии')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Производство Австрия') {
+	// 		$(this).attr('alt', 'Сделано в <br> Австрии')
+	// 		$(this).attr('title', 'Сделано в  Австрии')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Производство Германия') {
+	// 		$(this).attr('alt', 'Сделано в <br> Германии')
+	// 		$(this).attr('title', 'Сделано в  Германии')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
+	// 	if ($(this).attr('alt') == 'Производство Array') {
+	// 		$(this).attr('alt', 'Производство <br> Array')
+	// 		$(this).parent().append($this.attr('alt'));
+	// 	}
 
-	});
+	// });
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
