@@ -2561,9 +2561,9 @@
 
 				margin-left: 0;
 
-				&:nth-child(even) {
-					margin: 0 24px;
-				}
+					margin-right: 24px;
+
+
 			}
 
 			&__popup {
@@ -2596,6 +2596,7 @@
 					margin-right: 10px;
 				}
 			}
+
 		}
 
 		.catalog__prop {
