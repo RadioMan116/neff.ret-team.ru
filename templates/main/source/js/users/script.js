@@ -1312,7 +1312,7 @@ $(document).ready(function () {
 			}
 
 		});
-		if ($(".articles__item").length < 2) {
+		if ($(".js-sidebar-articles .articles__item").length < 2) {
 			console.log('low')
 			console.log($(".articles__item"))
 			$('.swiper-pagination-articles').hide();
