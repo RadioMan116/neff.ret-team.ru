@@ -1312,13 +1312,23 @@ $(document).ready(function () {
 			}
 
 		});
-		if ($(".js-sidebar-articles .articles__item").length < 2) {
-			console.log('low')
-			console.log($(".articles__item"))
-			$('.swiper-pagination-articles').hide();
-			$('.articles__next').hide();
-			$('.articles__prev').hide();
-		}
+		let articleCurretSlide = [];
+		(function () {
+			let articleSlide = document.querySelectorAll('.col-md-3 .js-sidebar-articles .articles__item');
+
+			articleSlide.forEach(function (element) {
+				articleCurretSlide.push(element);
+				// console.log(element.length);
+			})
+			console.log(articleCurretSlide.length);
+			if (articleCurretSlide.length < 2) {
+				console.log('low')
+				// console.log($(".articles__item"))
+				$('.swiper-pagination-articles').hide();
+				$('.articles__next').hide();
+				$('.articles__prev').hide();
+			}
+		})();
 	}
 
 	(function () {
