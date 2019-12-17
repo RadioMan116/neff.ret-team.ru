@@ -14,6 +14,7 @@
 		+p {
 			margin-top: 28px;
 		}
+
 		+h2 {
 			margin-top: 28px;
 		}
@@ -71,7 +72,7 @@
 		margin-top: 18px;
 	}
 
-	p	{
+	p {
 		// display: block;
 		width: 100%;
 		color: #333333;
@@ -240,8 +241,12 @@
 		padding: 11px 0 11px 13px;
 
 		&:first-child {
-			width: 286px;
+			width: 320px;
 			flex-shrink: 0;
+		}
+
+		&[align="center"] {
+			width: 100%;
 		}
 
 		i {
@@ -442,6 +447,7 @@
 	.seo-text__button {
 		display: none;
 	}
+
 	.iframe {
 		position: relative;
 		padding: 0 7px;
@@ -832,6 +838,7 @@
 			}
 
 		}
+
 		.about-store__button {
 			position: absolute;
 			bottom: 0px;
