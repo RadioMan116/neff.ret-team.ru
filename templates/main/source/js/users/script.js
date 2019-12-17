@@ -568,13 +568,13 @@ $(document).ready(function () {
 			}
 
 		});
-		if ($(".advantages-low .swiper-slide").length > 6) {
-			$('.advantages-low__prev').show();
-			$('.advantages-low__next').show();
-		} else {
-			$('.advantages-low__prev').hide();
-			$('.advantages-low__next').hide();
-		}
+		// if ($(".advantages-low .swiper-slide").length > 6) {
+		// 	$('.advantages-low__prev').show();
+		// 	$('.advantages-low__next').show();
+		// } else {
+		// 	$('.advantages-low__prev').hide();
+		// 	$('.advantages-low__next').hide();
+		// }
 		$(this).on("click", "a.advantages-low__link", function (e) {
 			console.log('true')
 			console.log(window.location = $(this).attr('href'))
