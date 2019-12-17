@@ -532,6 +532,57 @@ $(document).ready(function () {
 		});
 
 	}
+	if ($(".catalog .js-advantages-low").length) {
+		var mySwiper20 = new Swiper(".catalog .advantages-low__container", {
+			slidesPerView: 3,
+			// slidesPerColumn: 2,
+			spaceBetween: 9,
+			touchRatio: 1,
+			allowTouchMove: false,
+			navigation: {
+				nextEl: ".advantages-low__next",
+				prevEl: ".advantages-low__prev"
+			},
+			pagination: {
+				el: ".swiper-pagination-advantages-low",
+				clickable: true
+			},
+			breakpoints: {
+				767: {
+					allowTouchMove: true,
+					slidesPerView: 3,
+					slidesPerColumn: 1,
+					spaceBetween: 9,
+				},
+				450: {
+					allowTouchMove: true,
+					slidesPerView: 1,
+					slidesPerColumn: 1,
+				},
+				660: {
+					allowTouchMove: true,
+					slidesPerView: 2,
+					slidesPerGroup: 1,
+					slidesPerColumn: 1,
+				}
+			}
+
+		});
+		if ($(".advantages-low .swiper-slide").length > 6) {
+			$('.advantages-low__prev').show();
+			$('.advantages-low__next').show();
+		} else {
+			$('.advantages-low__prev').hide();
+			$('.advantages-low__next').hide();
+		}
+		$(this).on("click", "a.advantages-low__link", function (e) {
+			console.log('true')
+			console.log(window.location = $(this).attr('href'))
+			window.location = $(this).attr('href');
+			return true;
+		});
+
+	}
 	if ($(".catalog.js-swiper-four").length) {
 		var mySwiper15 = new Swiper(".catalog.js-swiper-four", {
 			slidesPerView: 4,

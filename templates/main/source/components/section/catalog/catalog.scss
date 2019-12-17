@@ -1056,7 +1056,7 @@
 		}
 	}
 
-	.advantages {
+	.advantages,.advantages-low {
 		position: relative;
 		margin-bottom: 39px;
 
@@ -1126,7 +1126,7 @@
 			// text-decoration: underline;
 		}
 
-		.swiper-pagination-advantages {
+		.swiper-pagination-advantages,.swiper-pagination-advantages-low {
 			top: 9px;
 			right: 124px;
 			display: flex;
@@ -1140,7 +1140,7 @@
 		}
 
 
-		.advantages__prev {
+		.advantages__prev,.advantages-low__prev {
 			background: url("../images/special-offers_prev.png") 0/34px no-repeat;
 			position: absolute;
 			top: 16px;
@@ -1154,7 +1154,7 @@
 			}
 		}
 
-		.advantages__next {
+		.advantages__next,.advantages-low__next {
 			background: url("../images/special-offers_next.png") 0/34px no-repeat;
 			top: 16px;
 			right: 3px;
@@ -1945,10 +1945,10 @@
 			}
 		}
 
-		.advantages {
+		.advantages,.advantages-low {
 			padding-bottom: 32px;
 
-			.advantages__title {
+			.advantages__title,.advantages-low__title {
 				color: #394791;
 				font-family: "Roboto Condensed";
 				font-size: 24px;
@@ -1958,21 +1958,21 @@
 			}
 
 			.advantages__next,
-			.advantages__prev {
+			.advantages__prev,.advantages-low__prev,.advantages-low__next {
 				display: none !important;
 			}
 
-			.advantages__item {
+			.advantages__item,.advantages-low__item {
 				padding: 15px;
 			}
 
-			.swiper-pagination-advantages {
+			.swiper-pagination-advantages,.swiper-pagination-advantages-low {
 				top: unset;
 				right: unset;
 				bottom: 0;
 			}
 
-			.advantages__slide {
+			.advantages__slide,.advantages-low__slide {
 				display: flex;
 				justify-content: center;
 				align-items: baseline;
