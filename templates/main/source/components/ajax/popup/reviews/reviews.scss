@@ -7,7 +7,7 @@
 
 	&__title {
 		color: #2e2e2e;
-		
+
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 24px;
@@ -17,7 +17,7 @@
 
 	&__name {
 		color: #2e2e2e;
-		
+
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 24px;
@@ -60,7 +60,7 @@
 		box-sizing: border-box;
 		background-color: white;
 		color: #666666;
-		
+
 		font-size: 12px;
 		line-height: 18px;
 		border: 1px solid #cbcbcb;
@@ -127,7 +127,7 @@
 		box-sizing: border-box;
 		border: 1px solid #cbcbcb;
 		color: #666666;
-		
+
 		font-size: 12px;
 		line-height: 18px;
 
@@ -157,7 +157,7 @@
 		}
 
 		span {
-			
+
 			font-size: 12px;
 			line-height: 18px;
 			color: #666666;
@@ -206,7 +206,7 @@
 		left: 0;
 		top: 0;
 		height: 100%;
-		background-size: 24px !important;
+		background-size:auto  100% !important;
 	}
 
 	.ratings__start,
