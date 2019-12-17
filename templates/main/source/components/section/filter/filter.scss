@@ -1350,6 +1350,38 @@
 			margin-left: 4px;
 		}
 	}
+	.filter-color__item{
+		display:inline-block;
+		vertical-align:top;
+		margin:0 7px 10px 0
+	}
+	.filter-color__label{
+		display:block;
+		position:relative
+	}
+	.filter-color__input{
+		visibility:hidden;
+		position:absolute
+	}
+	.filter-color__color{
+		width:35px;
+		height:35px;
+		background-repeat:no-repeat !important;
+		background-size:cover !important;
+		background-position:center center !important;
+		border:1px solid #888;
+		display:block
+	}
+	.filter-color__input:checked~.filter-color__color:after{
+		position:absolute;
+		left:-4px;
+		top:-4px;
+		right:-4px;
+		bottom:-4px;
+		border:2px solid #ff2a39;
+		content:''
+	}
+
 
 	@media screen and (max-width: 767px) {
 		display: flex;
