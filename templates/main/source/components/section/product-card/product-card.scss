@@ -277,11 +277,11 @@
 			img {
 				width: auto;
 				height: auto !important;
-				height: -moz-available !important;
-				/* WebKit-based browsers will ignore this. */
-				height: -webkit-fill-available !important;
-				/* Mozilla-based browsers will ignore this. */
-				height: fill-available !important;
+				// height: -moz-available !important;
+				// /* WebKit-based browsers will ignore this. */
+				// height: -webkit-fill-available !important;
+				// /* Mozilla-based browsers will ignore this. */
+				// height: fill-available !important;
 			}
 
 			.iframe {
