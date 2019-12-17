@@ -88,8 +88,9 @@
 		}
 	}
 
+
 	.breadcrumbs {
-		width: 100%;
+		// width: 100%;
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -99,14 +100,31 @@
 		color: #ffffff;
 		margin-bottom: 10px;
 		margin-top: 25px;
+		background: rgba(0, 0, 0, 0.21);
+		width: auto;
+		align-self: baseline;
+		padding: 0 14px;
 
 		div {
 			align-items: center;
 		}
 
+		// a {
+		// 	// color: #ffffff;
+
+		// 	color: #ffffffc9;
+		// }
 		a {
-			color: #ffffff;
+			// color: #ffffff;
+
+			color: #fff;
 		}
+
+
+		&__link {
+			color: #fff;
+		}
+
 	}
 
 
