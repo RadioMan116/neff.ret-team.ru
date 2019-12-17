@@ -483,7 +483,7 @@
 		}
 
 		.similar-products__button {
-			@include button($margin: 0 0 0 42px, $padding:12px 19px);
+			@include button($margin: 0 0 0 , $padding:12px 19px);
 
 			&:before {
 				display: none;
