@@ -1033,43 +1033,7 @@ $(document).ready(function () {
 
 	});
 	if (windowWidth2 > 767) {
-		var mySwiper4 = new Swiper(".col-md-3 .js-container-upsale", {
-			// Optional parameters
-			// slidesPerGroup: 1,
-			slidesPerView: 1,
-			slidesPerColumn: 2,
-			spaceBetween: 24,
-			allowTouchMove: false,
-			// direction: "horizontal",
-			// loop: true,
-			// If we need pagination
-			navigation: {
-				nextEl: ".upsale__next",
-				prevEl: ".upsale__prev"
-			},
-			pagination: {
-				el: ".swiper-pagination-upsale",
-				clickable: true
-			},
-			breakpoints: {
-				// when window width is <= 320px
-				767: {
-					allowTouchMove: true,
-					slidesPerView: 1,
-					slidesPerColumn: 2,
-				}
-			}
-			// Navigation arrows
-			// navigation: {
-			// 	nextEl: ".main_next",
-			// 	prevEl: ".main_prev"
-			// },
 
-			// And if we need scrollbar
-			// scrollbar: {
-			// 	el: ".swiper-scrollbar"
-			// }
-		});
 		if ($('h1.title:contains("Корзина")')) {
 			$('h1.title:contains("Корзина")').css("width", "100%")
 		};
@@ -2477,5 +2441,45 @@ $(window).on('load', function () {
 		// 		}
 		// 	});
 		// }, 300);
+	}
+	if (windowWidth2 > 767) {
+		var mySwiper4 = new Swiper(".col-md-3 .js-container-upsale", {
+			// Optional parameters
+			// slidesPerGroup: 1,
+			slidesPerView: 1,
+			slidesPerColumn: 2,
+			spaceBetween: 24,
+			allowTouchMove: false,
+			// direction: "horizontal",
+			// loop: true,
+			// If we need pagination
+			navigation: {
+				nextEl: ".upsale__next",
+				prevEl: ".upsale__prev"
+			},
+			pagination: {
+				el: ".swiper-pagination-upsale",
+				clickable: true
+			},
+			breakpoints: {
+				// when window width is <= 320px
+				767: {
+					allowTouchMove: true,
+					slidesPerView: 1,
+					slidesPerColumn: 2,
+				}
+			}
+			// Navigation arrows
+			// navigation: {
+			// 	nextEl: ".main_next",
+			// 	prevEl: ".main_prev"
+			// },
+
+			// And if we need scrollbar
+			// scrollbar: {
+			// 	el: ".swiper-scrollbar"
+			// }
+		});
+
 	}
 });
