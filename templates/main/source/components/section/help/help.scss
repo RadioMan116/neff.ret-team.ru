@@ -7,7 +7,7 @@
 
   &__row {
     width: 100%;
-    font-family: 'Gotham Pro Medium';
+
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -40,7 +40,7 @@
   }
 
   &__info {
-    font-family: 'Gotham Pro';
+
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -58,7 +58,7 @@
   @media screen and (max-width: 768px) {
     &__row {
       color: #2e2e2e;
-      font-family: "Gotham Pro Medium";
+
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
@@ -70,7 +70,7 @@
 
     .help__info {
       color: #2e2e2e;
-      font-family: "Gotham Pro";
+
       font-size: 14px;
       line-height: 22px;
     }
@@ -91,7 +91,7 @@
     }
 
     &__info {
-      font-family: "Gotham Pro";
+
       font-size: 14px;
       line-height: 22px;
     }
