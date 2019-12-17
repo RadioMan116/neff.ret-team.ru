@@ -8,7 +8,7 @@
 		display: flex;
 		margin: 0 0 28px 0;
 		width: 100%;
-		padding: 15px 14px 56px 14px;
+		padding: 15px 14px 64px 14px;
 		background-color: #ffffff;
 		border: solid 1px #eeeeee;
 		display: flex;
@@ -21,7 +21,21 @@
 			box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
 		}
 
-		&__title {
+		// &:before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: 16px;
+		// 	right: 16px;
+		// 	height: 1px;
+		// 	width: auto;
+		// 	background: #f1f1f1;
+		// 	top: 50%;
+		// 	transform: translateY(-50%)
+		// }
+
+
+		&__title,
+		&__subtitle {
 			font-size: 20px;
 			font-weight: 500;
 			font-style: normal;
@@ -43,7 +57,9 @@
 
 		&__items {
 			display: flex;
-			border-bottom: 1px solid #f1f1f1;
+			// border-bottom: 1px solid #f1f1f1;
+			position: relative;
+
 			// flex-wrap: wrap;
 		}
 
@@ -51,16 +67,30 @@
 			display: flex;
 			padding-top: 24px;
 			padding-bottom: 10px;
-			border-bottom: 1px solid #f1f1f1;
+			// border-bottom: 1px solid #f1f1f1;
 			max-width: 100%;
 			flex-wrap: wrap;
 			margin-top: 0 !important;
+			margin-bottom: 1px;
 
 
 			&:last-child {
-				// border-bottom: 0;
+				border-bottom: 0;
 				padding-bottom: 0;
 			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: -16px;
+				right: -16px;
+				height: 1px;
+				width: auto;
+				background: #f1f1f1;
+				bottom: 0px;
+				transform: translateY(-50%);
+			}
+
 		}
 
 		&__pic {
@@ -117,8 +147,8 @@
 		&__link {
 			padding: 0;
 			color: transparent;
-			background-image: url('../images/shopping-cart.png');
-			background-size: 18px;
+			background-image: url('../images/shopping-cart.svg');
+			background-size: auto;
 			background-position: 50%;
 			width: 44px;
 			height: 36px;
@@ -159,6 +189,7 @@
 			flex-grow: 1;
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 		}
 
 		.product-card__presence {
@@ -175,7 +206,7 @@
 
 		.swiper-pagination-upsale {
 			position: absolute;
-			bottom: 22px;
+			bottom: 16px;
 			left: 16px;
 			width: auto;
 
@@ -188,8 +219,8 @@
 		&__next {
 			background: url("../images/special-offers_next.png") 0/24px no-repeat;
 			top: unset;
-			bottom: 16px;
-			right: 16px;
+			bottom: 14px;
+			right: 22px;
 			width: 24px;
 			height: 24px;
 
@@ -202,8 +233,8 @@
 			background: url("../images/special-offers_prev.png") 0/24px no-repeat;
 			position: absolute;
 			top: unset;
-			bottom: 16px;
-			right: 49px;
+			bottom: 14px;
+			right: 54px;
 			left: unset;
 			width: 24px;
 			height: 24px;
@@ -212,8 +243,11 @@
 				background: url("../images/swiper-button-color-prev.png") 0/24px no-repeat;
 			}
 		}
-	}
 
+		&__text {
+			line-height: 18px;
+		}
+	}
 	.marking {
 		margin-bottom: 32px;
 
