@@ -29,7 +29,7 @@
 		padding-right: 3px;
 		height: 36px;
 		align-items: flex-end;
-		flex-grow: 1;
+		flex-grow: 0;
 
 		.catalog__price {
 			width: calc(100% - 112px);
@@ -60,13 +60,13 @@
 
 	&__prop {
 		display: flex;
-		align-items: flex-end;
+		align-items: flex-start;
 		padding: 0px;
 		flex-grow: 99;
 		flex-wrap: wrap;
-
+		max-height: 78px;
 		margin-bottom: 5px;
-		margin-top: 0px;
+		margin-top: auto;
 
 		.link-pop-glossary {}
 
@@ -1056,7 +1056,8 @@
 		}
 	}
 
-	.advantages,.advantages-low {
+	.advantages,
+	.advantages-low {
 		position: relative;
 		margin-bottom: 39px;
 
@@ -1126,7 +1127,8 @@
 			// text-decoration: underline;
 		}
 
-		.swiper-pagination-advantages,.swiper-pagination-advantages-low {
+		.swiper-pagination-advantages,
+		.swiper-pagination-advantages-low {
 			top: 9px;
 			right: 124px;
 			display: flex;
@@ -1140,7 +1142,8 @@
 		}
 
 
-		.advantages__prev,.advantages-low__prev {
+		.advantages__prev,
+		.advantages-low__prev {
 			background: url("../images/special-offers_prev.png") 0/34px no-repeat;
 			position: absolute;
 			top: 16px;
@@ -1154,7 +1157,8 @@
 			}
 		}
 
-		.advantages__next,.advantages-low__next {
+		.advantages__next,
+		.advantages-low__next {
 			background: url("../images/special-offers_next.png") 0/34px no-repeat;
 			top: 16px;
 			right: 3px;
@@ -1945,10 +1949,12 @@
 			}
 		}
 
-		.advantages,.advantages-low {
+		.advantages,
+		.advantages-low {
 			padding-bottom: 32px;
 
-			.advantages__title,.advantages-low__title {
+			.advantages__title,
+			.advantages-low__title {
 				color: #394791;
 				font-family: "Roboto Condensed";
 				font-size: 24px;
@@ -1958,21 +1964,26 @@
 			}
 
 			.advantages__next,
-			.advantages__prev,.advantages-low__prev,.advantages-low__next {
+			.advantages__prev,
+			.advantages-low__prev,
+			.advantages-low__next {
 				display: none !important;
 			}
 
-			.advantages__item,.advantages-low__item {
+			.advantages__item,
+			.advantages-low__item {
 				padding: 15px;
 			}
 
-			.swiper-pagination-advantages,.swiper-pagination-advantages-low {
+			.swiper-pagination-advantages,
+			.swiper-pagination-advantages-low {
 				top: unset;
 				right: unset;
 				bottom: 0;
 			}
 
-			.advantages__slide,.advantages-low__slide {
+			.advantages__slide,
+			.advantages-low__slide {
 				display: flex;
 				justify-content: center;
 				align-items: baseline;
