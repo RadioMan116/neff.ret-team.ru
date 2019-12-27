@@ -612,6 +612,8 @@
 		}
 
 		&.seo-text {
+			// overflow: hidden;
+			position: relative;
 
 			h2 {
 				color: #262626;
@@ -631,7 +633,14 @@
 			.container {
 				display: block !important;
 			}
+
 			.about-store__button {
+				display: none;
+			}
+
+
+			&.active {
+				.container {}
 
 			}
 		}
@@ -817,34 +826,7 @@
 
 		&.seo-text {
 			// height: 700px;
-			// overflow: hidden;
-			position: relative;
 
-			.container {
-				display: flex;
-
-				&:first-child {
-
-					:nth-child(5),
-					:nth-child(6) {
-						display: none;
-					}
-
-					:nth-child(-n+6) {
-						order: -1;
-					}
-
-
-				}
-
-			}
-	&.active {
-
-		:nth-child(5),
-		:nth-child(6) {
-			display: block;
-		}
-	}
 		}
 
 		.about-store__button {
