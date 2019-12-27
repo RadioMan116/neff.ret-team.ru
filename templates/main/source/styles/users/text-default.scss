@@ -533,6 +533,7 @@
 			// max-height: 52px;
 			margin-top: -5px;
 			margin-bottom: 24px;
+
 		}
 
 		h3 {
@@ -625,6 +626,13 @@
 				margin: 0 -15px;
 				width: calc(100% + 30px);
 				max-width: calc(100% + 30px);
+			}
+
+			.container {
+				display: block !important;
+			}
+			.about-store__button {
+
 			}
 		}
 
@@ -826,17 +834,17 @@
 						order: -1;
 					}
 
-					&.active {
 
-						:nth-child(5),
-						:nth-child(6) {
-							display: block;
-						}
-					}
 				}
 
 			}
+	&.active {
 
+		:nth-child(5),
+		:nth-child(6) {
+			display: block;
+		}
+	}
 		}
 
 		.about-store__button {
