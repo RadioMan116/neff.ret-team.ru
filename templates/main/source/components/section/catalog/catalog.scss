@@ -1736,6 +1736,7 @@
 
 				.catalog__feature {
 					justify-content: space-between;
+					align-items:center;
 				}
 
 				.catalog__bold {
@@ -2462,14 +2463,13 @@
 
 				}
 
-				&:nth-child(4),
+				// &:nth-child(4),
 				&:nth-child(5),
 				&:nth-child(6) {
 					p {
 						left: unset;
 						right: 0;
 					}
-
 				}
 
 				&:hover {
