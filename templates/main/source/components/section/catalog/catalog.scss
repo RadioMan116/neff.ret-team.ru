@@ -2434,6 +2434,15 @@
 			// 	}
 			// }
 		}
+
+		.catalog__prop {
+			.link-pop-glossary:hover img[title]:after {
+				content: attr(title);
+				padding: 4px 8px;
+				color: #FFF;
+				background-color: black;
+			}
+		}
 	}
 
 	@media screen and (max-width: 768px) {

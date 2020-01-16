@@ -4217,9 +4217,10 @@
 					flex-direction: column;
 					justify-content: flex-start;
 					min-height: 235px;
-img{
-	min-height: 235px;
-}
+
+					img {
+						min-height: 235px;
+					}
 
 
 					&::before,
@@ -5357,8 +5358,10 @@ img{
 				flex-wrap: wrap;
 				padding-left: 0;
 				margin-right: -16px;
-				width: auto;
+				width: 100%;
+				max-height: unset;
 				margin-left: unset;
+				position: relative;
 
 				h6 {
 					width: 100%;
@@ -5371,6 +5374,12 @@ img{
 				.link-pop-glossary {
 					margin-left: 0px;
 					margin-right: 16px;
+					position: static;
+				}
+
+				.popup-prop {
+					left: 0;
+					bottom: 80%;
 				}
 			}
 
