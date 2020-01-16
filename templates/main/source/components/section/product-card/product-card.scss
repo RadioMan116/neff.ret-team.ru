@@ -65,6 +65,7 @@
 				align-items: center;
 				justify-content: center;
 				min-height: 400px;
+
 				// display: block;
 				// text-align: center;
 
@@ -101,6 +102,9 @@
 
 				img {
 					// align-self: center;
+
+					// min-width: 70%;
+					// min-height: 70%;
 				}
 			}
 
@@ -4220,6 +4224,7 @@
 
 					img {
 						min-height: 235px;
+						height: auto !important;
 					}
 
 
