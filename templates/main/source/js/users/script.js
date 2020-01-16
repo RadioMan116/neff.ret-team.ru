@@ -718,19 +718,7 @@ $(document).ready(function () {
 		}, 3000)
 
 	}
-	// $(window).resize(function () {
-	// 	var windowWidth = $(window).width();
-	// 	if (windowWidth > 480)
-	// 		$(".products-line td")
-	// 		.first()
-	// 		.addClass("swiper-slide swiper-slide-active");
-	// 	else
-	// 		$(".products-line td")
-	// 		.first()
-	// 		.removeClass("swiper-slide swiper-slide-active");
 
-
-	// });
 	$(".js-header__search").click(function () {
 		if ($(".search__popup").hasClass("search__popup-open") == false) {
 			$(".header .search__popup").addClass("search__popup-open");
@@ -862,62 +850,7 @@ $(document).ready(function () {
 		}
 		$(".labels__popup").css('left', handel);
 	});
-	// $(".js-characteristic-glossary").click(function () {
-	// 	var text = $(this).find('.characteristic-glossary__text').text()
-	// 	var $this = $(this);
 
-
-	// 	if ($(this).hasClass('active')) {
-	// 		$(this).removeClass('active');
-
-	// 	} else {
-	// 		$('.characteristic-glossary ').removeClass('active');
-	// 		$(this).addClass('active');
-	// 		console.log(text)
-	// 		$(this).find('.characteristic-glossary__link').attr('target', 'blank');
-
-	// 		if ($(this).find(".button-close").length < 1) {
-	// 			var buttonClose = document.createElement("div");
-	// 			buttonClose.className = ('button-close');
-	// 			$(this).find('.popup-gloss').append(buttonClose);
-
-	// 		}
-	// 		if (text.length > 300) {
-	// 			text = text.substring(0, 300);
-	// 			var lastIndex = text.lastIndexOf(" "); // позиция последнего пробела
-	// 			text = text.substring(0, lastIndex) + '...';
-	// 			$(this).find('.characteristic-glossary__text').text(text);
-	// 		}
-	// 		// $('body').on("click", function (event) {
-	// 		// 	// $('body').css('overflow','hidden');
-	// 		// 	$this.removeClass('active');
-	// 		// });
-	// 		$(document).mouseup(function (e) { // событие клика по веб-документу
-	// 			var div = $("#popup"); // тут указываем ID элемента
-	// 			if (!$this.is(e.target) // если клик был не по нашему блоку
-	// 				&&
-	// 				$this.has(e.target).length === 0) { // и не по его дочерним элементам
-	// 				$this.removeClass('active'); // скрываем его
-	// 			}
-	// 		});
-	// 		var target = $this.children('.popup-gloss');
-
-	// 		var targetPos = target.offset().top;
-	// 		var windowHeight = $(window).height();
-	// 		var elHeight = target.height();
-	// 		var scrollToElem = targetPos + elHeight;
-
-	// 		$(window).scroll(function () {
-	// 			var winScrollTop = $(this).scrollTop();
-	// 			if (winScrollTop > scrollToElem) {
-	// 				$(target).parent().removeClass("active");
-	// 			}
-	// 			if (scrollToElem - windowHeight - elHeight > winScrollTop) {
-	// 				$(target).parent().removeClass("active");
-	// 			}
-	// 		});
-	// 	}
-	// });
 	$(".js-characteristic-glossary").hover(function () {
 		var text = $(this).find('.characteristic-glossary__text').text()
 		var $this = $(this);
@@ -1038,20 +971,7 @@ $(document).ready(function () {
 		this.remove();
 	});
 
-	// (function() {
-	// 	var glossaries = document.querySelectorAll('.js-filter-glossary');
-	// 	[].forEach.call(glossaries, function(node) {
-	// 		node.addEventListener('click', function(e) {
-	// 			e.stopPropagation();
-	// 			if(this.getAttribute('data-glossary') == 'show') {
-	// 				this.setAttribute('data-glossary', 'hide');
-	// 			} else {
-	// 				glossaries.setAttribute('data-glossary','hide');
-	// 				this.setAttribute('data-glossary', 'show');
-	// 			}
-	// 		});
-	// 	});
-	// })();
+
 	$(".catalog__prop .js-link-pop-glossary").click(function () {
 		var text = $(this).find('.popup-prop__text').text();
 		var handel = $(this).position().left;
@@ -1297,6 +1217,17 @@ $(document).ready(function () {
 			console.log($(this))
 		});
 		let openMenu = document.querySelector('nav.dropdown-menu').classList.add('active');
+		(function () {
+			let propImg = document.querySelectorAll('.link-pop-glossary');
+
+			propImg.forEach((el, i) => {
+				let info = el.querySelector('img').getAttribute("title");
+				var newP = document.createElement("p");
+				newP.innerHTML = info;
+				let parent = el.parentNode;
+				el.appendChild(newP);
+			})
+		})();
 
 	}
 	if ($('.js-sidebar-articles').length > 0) {
@@ -1424,52 +1355,7 @@ $(document).ready(function () {
 	}
 	$('.filter__slider').draggable();
 	hamburger("js-hamburger", "js-menu");
-	// $('.product-card__announcing .announcing__item img').each(function () {
-	// 	var $this = $(this);
-	// 	// $this.parent().append($this.attr('alt'));
-	// 	if ($(this).attr('alt') == 'Бесплатная доставка') {
-	// 		$(this).attr('alt', 'Бесплатная <br> доставка')
-	// 		$(this).attr('title', 'Бесплатная доставка по Москве в пределах МКАД')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	// if ($(this).attr('alt') == 'Удобная доставка') {
-	// 	// 	$(this).attr('alt', 'Удобная <br> доставка')
-	// 	// 	$(this).parent().append($this.attr('alt'));
-	// 	// }
-	// 	if ($(this).attr('alt') == 'Бесплатное подключение') {
-	// 		$(this).attr('alt', 'Бесплатное <br> подключение')
-	// 		$(this).attr('title', 'Бесплатное подключение на готовые коммуникации в пределах МКАД в Москве')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Профессиональное подключение') {
-	// 		$(this).attr('alt', 'Профессиональное <br> подключение')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Лучшее предложение') {
-	// 		$(this).attr('alt', 'Лучшее <br> предложение')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Болгария') {
-	// 		$(this).attr('alt', 'Сделано в <br> Болгарии')
-	// 		$(this).attr('title', 'Сделано в Болгарии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Австрия') {
-	// 		$(this).attr('alt', 'Сделано в <br> Австрии')
-	// 		$(this).attr('title', 'Сделано в  Австрии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Германия') {
-	// 		$(this).attr('alt', 'Сделано в <br> Германии')
-	// 		$(this).attr('title', 'Сделано в  Германии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Array') {
-	// 		$(this).attr('alt', 'Производство <br> Array')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
 
-	// });
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
@@ -2224,13 +2110,13 @@ $(document).ready(function () {
 		}
 
 	})();
-	// $('.docs-frame iframe').contents().find('html').html("<h1 style='text-align: center;'>This IS an iframe</h1>");
 
 	$(".header__overlay").click(function () {
 		$(".header__overlay").hide();
 		$('#js-menu nav.dropdown-menu').removeClass("active");
 		$(".header__overlay").hide();
 	});
+
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();
