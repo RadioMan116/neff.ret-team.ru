@@ -423,6 +423,10 @@
 					flex-wrap: wrap;
 					width: 100%;
 				}
+				.dropdown-menu__list{
+					overflow: unset;
+					max-height: unset;
+				}
 
 
 				.dropdown-menu__title {
