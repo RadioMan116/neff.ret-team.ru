@@ -2434,14 +2434,18 @@
 	.catalog__link {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.labels {
 		margin-left: 24px;
 		position: relative;
+		display: flex;
+		align-items: baseline;
 
 		img {
 			margin-left: 14px;
+			max-width: 42px;
 		}
 
 		&__popup {
@@ -2599,6 +2603,7 @@
 				color: #d0021b;
 				padding: 8px 12px 8px 6px;
 				margin-right: 25px;
+				flex-shrink: 0;
 
 				img {
 					margin-right: 10px;
@@ -5201,15 +5206,15 @@
 			.labels {
 				position: unset;
 				justify-content: center;
-				flex-direction: row-reverse;
+				flex-direction: row;
 				flex-wrap: wrap;
 				margin: 0 -8px 12px;
 
 				img {
-					max-height: 35px !important;
+					// max-height: 35px !important;
 
 
-					margin: 0 6px;
+					margin: 0 6px 0 0;
 
 				}
 
@@ -5219,6 +5224,7 @@
 					height: 40px;
 					margin-right: 6px;
 					flex-shrink: 0;
+					order: -1;
 				}
 			}
 
