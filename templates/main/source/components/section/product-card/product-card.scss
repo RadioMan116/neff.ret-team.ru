@@ -2568,6 +2568,7 @@
 			flex-grow: 1;
 			top: 0;
 			left: 0;
+			display: ruby;
 
 			img {
 
@@ -5209,6 +5210,8 @@
 				flex-direction: row;
 				flex-wrap: wrap;
 				margin: 0 -8px 12px;
+				display: flex;
+
 
 				img {
 					// max-height: 35px !important;
