@@ -14,13 +14,14 @@ img {
 	// width: 100%;
 	height: auto;
 	max-width: 100%;
-	max-height: 100% ;
+	max-height: 100%;
 }
 
 .fixed {
 	overflow: hidden;
+
 	// width:calc(100% - 17px);
-	.wrapper{
+	.wrapper {
 		height: 100%;
 	}
 }
@@ -113,21 +114,23 @@ h1.title {
 	top: 50% !important;
 	transform: translateX(-50%)translateY(-50%)scale(1) !important;
 	left: 50% !important;
-	width: auto !important;
+	// width: auto !important;
 	max-width: 100% !important;
-	height: auto !important;
+	// height: auto !important;
 	display: flex !important;
 	flex-direction: column !important;
 	align-items: center !important;
 	justify-content: center !important;
 	transition: all 0.3s ease-in-out;
+	max-height: 100%;
 
 	img {
 		position: unset !important;
-		width: fit-content !important;
-		height: auto !important;
+		width: auto !important;
+		height: -webkit-fill-available !important;
 		max-width: 100%;
 		cursor: pointer !important;
+		max-height: 100% !important;
 	}
 
 
@@ -205,6 +208,7 @@ picture {
 .js-news {
 	flex-grow: 1;
 }
+
 .newsletter {
 	display: flex;
 	border: 1px solid #ececec;
@@ -270,7 +274,7 @@ picture {
 
 		.checkbox__text {
 			a {
-				margin:0 2px !important;
+				margin: 0 2px !important;
 
 			}
 		}
@@ -379,79 +383,80 @@ picture {
 
 	.js-go {}
 
-	@media screen and (max-width: 767px){
+	@media screen and (max-width: 767px) {
 
-			flex-direction: column;
-			display: flex;
-			order: 6;
-			margin: 0 -16px;
+		flex-direction: column;
+		display: flex;
+		order: 6;
+		margin: 0 -16px;
+		width: auto;
+		padding: 16px;
+
+		&.order {
+			order: -4;
+		}
+
+		&__items {
 			width: auto;
-			padding: 16px;
-			&.order {
-				order: -4;
-			}
+			margin: -30% -2px 0;
+			background: white;
+		}
 
-			&__items {
-				width: auto;
-				margin: -30% -2px 0;
-				background: white;
-			}
+		.newsletter__title {
+			color: #333333;
+			font-family: "Roboto Condensed";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 26px;
+			padding: 16px 0 11px;
+			background: white;
+			width: 100%;
+			// margin-top: -26px;
+		}
 
-			.newsletter__title {
-				color: #333333;
-				font-family: "Roboto Condensed";
-				font-size: 18px;
-				font-weight: 400;
-				line-height: 26px;
-				padding: 16px 0 11px;
-				background: white;
-				width: 100%;
-				// margin-top: -26px;
-			}
+		.newsletter__subtitle {
+			color: #666666;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 15px;
+		}
 
-			.newsletter__subtitle {
-				color: #666666;
-				font-family: Arial;
-				font-size: 14px;
-				line-height: 18px;
-				margin-bottom: 15px;
-			}
+		.newsletter__pic {
+			margin-right: 0;
+			width: 100%;
+			overflow: hidden;
 
-			.newsletter__pic {
-				margin-right: 0;
-				width: 100%;
-				overflow: hidden;
-
-				img {
-					margin-top: -14%;
-				}
+			img {
+				margin-top: -14%;
 			}
+		}
 
-			input[type=text],
-			input[type=tel],
-			input[type=submit] {
-				margin-right: 0;
-				width: 100%;
-				max-width: unset;
-			}
+		input[type=text],
+		input[type=tel],
+		input[type=submit] {
+			margin-right: 0;
+			width: 100%;
+			max-width: unset;
+		}
 
-			input[type=text] {
-				margin-bottom: 10px;
-			}
+		input[type=text] {
+			margin-bottom: 10px;
+		}
 
-			input[type=submit] {
-				order: 4;
-			}
+		input[type=submit] {
+			order: 4;
+		}
 
-			.checkbox_oferta {
-				width: 100%;
-				margin: 12px 0 15px;
-			}
+		.checkbox_oferta {
+			width: 100%;
+			margin: 12px 0 15px;
+		}
 
-			.checkbox__text a {
-				margin-left: 5px;
-				margin-right: 5px;
-			}
+		.checkbox__text a {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 
 	}
 }

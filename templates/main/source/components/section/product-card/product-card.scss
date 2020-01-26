@@ -472,6 +472,7 @@
 
 		&.out-production {
 			color: #333333;
+			font-weight: 700;
 		}
 	}
 
@@ -3782,6 +3783,155 @@
 		}
 	}
 
+	.analogs {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 30px;
+		position: relative;
+
+		&__title {
+			color: #333333;
+			font-family: "Roboto Condensed";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+
+		.swiper-container {
+			.swiper-wrapper.analogs__items {
+				.swiper-slide.analogs__item {
+					border: solid 1px #eeeeee;
+					background: #ffffff;
+					padding: 19px 15px 14px;
+					display: flex;
+					flex-direction: column;
+					align-items: baseline;
+				}
+
+				.analogs__pic {
+					height: 105px;
+					width: 117px;
+					align-self: center;
+
+					img {}
+				}
+
+				.analogs__text {
+					color: #2e2e2e;
+					font-family: "Roboto Condensed";
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 22px;
+					margin: 13px 0 6px;
+				}
+
+				.analogs__presence.catalog__presence {
+					color: #60be34;
+					font-family: Arial;
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 15px;
+					margin-bottom: 8px;
+				}
+
+				.special-offers__sale.catalog__sale {
+					margin-bottom: 0;
+					align-items: center;
+					flex-wrap: nowrap;
+
+
+					.special-offers__price.catalog__price {
+						color: #2e2e2e;
+						font-family: "Roboto Condensed";
+						font-size: 13px;
+						font-weight: 700;
+						line-height: 24px;
+					}
+
+					.catalog__simile {
+						margin-right: 8px;
+						margin-left: auto;
+
+						&:hover {}
+
+						&:active {}
+
+						&:focus {}
+					}
+
+					.analogs__buy {
+						padding: 0;
+						color: transparent;
+						width: 40px;
+						height: 34px;
+						font-family: Roboto Condensed;
+						font-size: 14px;
+						text-decoration: none;
+						margin: 0;
+						border-radius: 3px;
+						background: url("../images/shopping-cart.svg") $base no-repeat center;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border: none;
+						cursor: pointer;
+						text-align: center;
+
+						&:hover {}
+
+						&:active {}
+
+						&:focus {}
+					}
+
+					.special-offers__rub.analogs__rub {
+						color: #2e2e2e;
+						font-family: "Roboto Condensed";
+						font-size: 13px;
+						font-weight: 700;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+
+		&__prev {
+			background: url("../images/special-offers_prev.png") 0/24px no-repeat;
+			position: absolute;
+			top: 21px;
+			right: 36px;
+			left: unset;
+			width: 24px;
+			height: 24px;
+
+			&:hover {
+				background: url("../images/swiper-button-color-prev.png") 0/24px no-repeat;
+			}
+		}
+
+		&__next {
+			background: url("../images/special-offers_next.png") 0/24px no-repeat;
+			top: 21px;
+			right: 3px;
+			width: 24px;
+			height: 24px;
+
+			&:hover {
+				background: url("../images/swiper-button-color-next.png") 0/24px no-repeat;
+			}
+		}
+
+		&__pagination {
+			top: 8px;
+			right: 90px;
+			display: flex;
+			justify-content: flex-end;
+			display: flex;
+		}
+	}
+
 
 
 	@media screen and (max-width: 767px) {
@@ -5598,6 +5748,70 @@
 			}
 		}
 
+		.analogs {
+			// width: calc(100% + 16px);
+			// margin-right: -16px;
+
+			&__title {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+
+			.swiper-container.js-analogs {
+				overflow: visible;
+
+				.swiper-wrapper.analogs__items {
+					.swiper-slide.analogs__item {}
+
+					.analogs__pic {
+						img {}
+					}
+
+					.analogs__text {
+						color: #2e2e2e;
+						font-family: "Roboto Condensed";
+						font-size: 13px;
+						font-weight: 400;
+						line-height: 22px;
+					}
+
+					.analogs__presence.catalog__presence {}
+
+					.special-offers__sale.catalog__sale {
+						.special-offers__price.catalog__price {}
+
+						.catalog__simile {
+							&:hover {}
+
+							&:active {}
+
+							&:focus {}
+						}
+
+						.analogs__buy {
+							&:hover {}
+
+							&:active {}
+
+							&:focus {}
+						}
+
+						.special-offers__rub.analogs__rub {}
+					}
+				}
+			}
+
+			&__pagination,
+			&__prev,
+			&__next {
+				display: none;
+			}
+
+
+		}
 	}
 }
 
