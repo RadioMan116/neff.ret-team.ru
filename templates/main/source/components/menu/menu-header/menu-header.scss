@@ -200,9 +200,13 @@
 		}
 
 		&__item {
-			width: 50%;
+			width: 40%;
 			margin-top: 17px;
 			cursor: pointer;
+
+			a {
+				white-space: nowrap;
+			}
 		}
 
 		.header__block_bottom & {
