@@ -185,7 +185,7 @@
 		}
 
 		&.active {
-			display: flex;
+			// display: flex;
 			// transform: scale(1);
 			// z-index: 10;
 			// background-color: #262626;
@@ -210,14 +210,17 @@
 		}
 
 		.header__block_bottom & {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			align-items: center;
+			&:nth-child(3) {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+			}
+
 		}
 
 		&+.menu {
-			display: none;
+			// display: none;
 		}
 
 		.dropdown-menu__back {
