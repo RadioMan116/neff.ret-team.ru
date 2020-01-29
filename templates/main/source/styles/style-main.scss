@@ -108,6 +108,9 @@ h1.title {
 
 .fancybox-container {
 	transition: all 0.3s ease-in-out !important;
+	*{
+		transition: 0.1s !important;
+	}
 }
 
 .fancybox-image-wrap {
@@ -136,7 +139,7 @@ h1.title {
 
 }
 .fancybox-container {
-	transition-duration: 500ms !important;
+	transition-duration: 0.3s !important;
 }
 
 .compensate-for-scrollbar {
