@@ -4378,8 +4378,17 @@
 					justify-content: flex-start;
 					min-height: 235px;
 
-					img {
+
+					picture {
 						min-height: 235px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+					}
+
+					img {
+						// min-height: 100px;
 						height: auto !important;
 					}
 
