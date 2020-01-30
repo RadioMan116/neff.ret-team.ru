@@ -1486,7 +1486,7 @@
 				overflow: visible;
 				height: fit-content !important;
 				max-height: 1000px;
-				min-height:calc(100% - 16px);
+				min-height: calc(100% - 16px);
 
 				.doc {
 					// .doc_loading
@@ -2460,15 +2460,19 @@
 			// .icon_doc
 			.icon_doc {}
 
-			// .doc {
-			// 	// .doc_loading
+			.doc {
+				// .doc_loading
 
-			// 	&_loading {
+				&_loading {
 
 
-			// 		span {}
-			// 	}
-			// }
+					span {}
+
+					&:nth-child(n+6) {
+						display: flex;
+					}
+				}
+			}
 
 			// .swiper-pagination-instructions {
 			// 	display: block;
@@ -2480,6 +2484,9 @@
 			// 		}
 			// 	}
 			// }
+		}
+		.catalog__text{
+			margin-bottom: 16px;
 		}
 
 		.catalog__prop {
