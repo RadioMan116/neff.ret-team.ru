@@ -1059,6 +1059,7 @@ $(document).ready(function () {
 		});
 		$(function () {
 			$('.instructions .catalog__text').matchHeight();
+			$('.instructions .instructions__item').matchHeight();
 		});
 	}
 	if (windowWidth2 <= 767) {
