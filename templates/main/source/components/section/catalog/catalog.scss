@@ -1425,11 +1425,12 @@
 	}
 
 	.instructions {
-		padding: 0px 0 24px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: relative;
+	padding: 0px 0 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 9;
 
 		// .instructions__title
 
@@ -1465,14 +1466,26 @@
 
 		// .instructions__items
 
-		&__items {}
+		&__items {
+				overflow: visible;
+				height: 533px;
+		}
 
 		// .instructions__item
 
 		&__item {
+				overflow: hidden;
+				background: #fff;
 			img {
 				// height: inherit;
 			}
+				&:hover {
+					overflow: visible;
+					height: fit-content;
+					max-height: 1000px;
+
+
+				}
 		}
 
 		// .instructions__all
@@ -1501,7 +1514,10 @@
 			// .catalog__pic
 
 			&__pic {
-				height: 227px;
+				height: 190px;
+				img{
+					max-height: 100%;
+				}
 			}
 
 

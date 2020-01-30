@@ -1057,6 +1057,9 @@ $(document).ready(function () {
 				},
 			}
 		});
+		$(function () {
+			$('.instructions .catalog__text').matchHeight();
+		});
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
@@ -2112,7 +2115,7 @@ $(document).ready(function () {
 
 	(function () {
 		let subMenuLink = document.querySelectorAll('.sub-menu__link');
-let parentDropNav = document.querySelectorAll('nav.dropdown-menu');
+		let parentDropNav = document.querySelectorAll('nav.dropdown-menu');
 		subMenuLink.forEach(element => element.addEventListener('click', function () {
 
 			parentDropNav.forEach(el => el.classList.remove('active'))
