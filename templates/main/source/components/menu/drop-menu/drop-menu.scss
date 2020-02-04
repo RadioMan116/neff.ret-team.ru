@@ -193,6 +193,7 @@
 						text-transform: uppercase;
 						display: flex;
 						flex-direction: column;
+						text-decoration:unset !important;
 					}
 				}
 			}
@@ -466,6 +467,7 @@
 						a {
 							display: flex;
 							flex-direction: column;
+							text-decoration: unset;
 						}
 
 						.dropdown-menu__link {
@@ -476,6 +478,7 @@
 							font-size: 16px;
 							padding: 9px 11px;
 							flex-wrap: wrap;
+							text-decoration: unset !important;
 
 							b {
 								margin-left: 0px;
