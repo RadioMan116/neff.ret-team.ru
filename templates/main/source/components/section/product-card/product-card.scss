@@ -3894,8 +3894,11 @@
 
 				.analogs__pic {
 					height: 105px;
-					width: 117px;
+					width: 100%;
 					align-self: center;
+					display: flex;
+					align-items: baseline;
+					justify-content: center;
 
 					img {}
 				}
@@ -3905,7 +3908,7 @@
 					font-family: "Roboto Condensed";
 					font-size: 13px;
 					font-weight: 400;
-					line-height: 22px;
+					line-height: 18px;
 					margin: 13px 0 6px;
 				}
 
