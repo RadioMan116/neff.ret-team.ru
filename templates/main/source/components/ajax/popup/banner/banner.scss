@@ -1,120 +1,172 @@
-.popup__change {
-    .callback_popup {
-        width: 373px;
-        justify-content: center;
+.popup_container.banner_popup {
+	padding: 16px 30px;
 
-        a {
-            @include link;
-        }
+	.title-strike.abuse__title {}
 
-        .modal__close {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            font-size: 24px;
-            color: #394791;
-        }
 
-        .callback__name {
-            display: none;
-        }
 
-        .abuse-popup__item {
-            margin-top: 21px;
-        }
+	#banner-form-wrap {
+		p {
+			color: #262626;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			margin-bottom: 0;
 
-        .abuse-popup__item label {
-            padding-left: 26px;
-            margin-bottom: 16px;
+		}
 
-            i {
-                margin-right: 5px;
-            }
-        }
+		.banner_link {
+			.banner_inner {
+				margin: 16px 0;
+				display: flex;
+				background: url('/images/+.svg')no-repeat center;
+				padding: 16px;
+				justify-content: space-between;
+				border: solid 1px #f1f1f1
+			}
 
-        .checkbox-custom {
-            margin-left: -24px;
-            margin-right: 5px;
-        }
+			.banner_item {
+				display: flex;
+				max-width: 197px;
+				align-items: center;
 
-        .call-popup-phone-inner {
-            text-align: center;
+				.banner_pic {
+					width: 88px;
+					max-height: 88px;
+					margin-right: 14px;
+				}
 
-            p {
-                width: 80%;
-                margin: 0 auto 1rem;
-            }
-        }
+				.banner_name {
+					color: #333333;
+					font-family: "Roboto Condensed";
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 20px;
+				}
 
-        .callback__form {
-            display: flex;
-            flex-wrap: wrap;
+				img {}
+			}
 
-            input[type="text"],
-            input[type='tel'] {
-                width: 100%;
-                border-radius: 2px;
-                background-color: #ffffff;
-                border: solid 1px #cbcbcb;
-                padding-left: 15px;
+			&:hover {}
 
-                font-size: 12px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.5;
-                letter-spacing: normal;
-                text-align: left;
-                color: #666666;
-                height: 46px;
+			&:active {}
 
-                &:first-child {
-                    margin-bottom: 12px;
-                }
+			&:focus {}
+		}
 
-                &:nth-child(2) {
-                    margin-bottom: 21px;
-                }
+		.callback__form {
+			display: flex;
+			flex-wrap: wrap;
 
-            }
-        }
+			input[type="text"],
+			input[type='tel'] {
+				// width: 100%;
+				border-radius: 2px;
+				background-color: #ffffff;
+				border: solid 1px #cbcbcb;
+				padding-left: 15px;
 
-        .abuse-popup__item {
-            height: unset;
-            flex-wrap: wrap;
-            text-align: left;
+				font-size: 12px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.5;
+				letter-spacing: normal;
+				text-align: left;
+				color: #666666;
+				height: 46px;
 
-            input[type="submit"] {
-                width: 100%;
-            }
-        }
+				&:first-child {
+					margin-bottom: 12px;
+				}
 
-        @media screen and (max-width: 768px) {
-            max-width: 373px;
-        }
+				&:nth-child(2) {
+					margin-bottom: 21px;
+				}
 
-        @media screen and (max-width: 480px) {
+			}
 
-            .call-popup-phone-inner p,
-            .abuse__title {
-                text-align: left;
-                width: 100%;
-            }
-        }
+			input[type="text"] {
+				width: 310px;
+			}
 
-        @media screen and (max-width: 375px) {
-            .title-strike {
-                margin-right: auto;
-                font-size: 20px;
-                font-weight: 500;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.3;
-                letter-spacing: normal;
-                text-align: left;
-                color: #333333;
-            }
+			input[type='tel'] {
+				width: 184px;
+				margin-left: auto;
+			}
+		}
 
-        }
+		.callback__name {
+			display: none;
+		}
+
+		.abuse-popup__item {
+			.checkbox__text {
+				max-width: 267px;
+			}
+		}
+
+		.abuse-popup__item {
+			height: unset;
+			flex-wrap: wrap;
+			text-align: left;
+			width: 100%;
+
+			input[type="submit"] {
+				margin-left: auto;
+				width: 184px;
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+
+  #banner-form-wrap {
+    p {
     }
+    .banner_link {
+      .banner_inner {
+		  flex-direction: column;
+        .banner_item {
+        }
+        .banner_pic {
+          img {
+          }
+        }
+        .banner_name {
+        }
+      }
+      &:hover {}
+      &:active {}
+      &:focus {}
+    }
+    #callback-form.callback__form {
+      #input-phone {
+      }
+      .abuse-popup__name.callback__name {
+        .abuse-popup__req.callback__req {
+        }
+      }
+      .abuse-popup__item {
+        .checkbox {
+          &__input {
+          }
+          &__icon {
+          }
+          &__text {
+          }
+          a {
+            &:hover {}
+            &:active {}
+            &:focus {}
+          }
+        }
+        .btn-sub3.abuse-popup__submit {
+        }
+      }
+    }
+  }
+	}
 }
