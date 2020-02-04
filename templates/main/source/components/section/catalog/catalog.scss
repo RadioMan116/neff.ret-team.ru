@@ -1279,13 +1279,10 @@
 			top: 9px;
 		}
 
-		.special-offers{
-			flex-grow: 1;
-
-			&__buy {
+		.special-offers__buy {
 			width: 90px;
 			height: 34px;
-		}}
+		}
 
 		.catalog__item.swiper-slide.special-offers__slide {
 			margin-bottom: 0;
@@ -1294,6 +1291,10 @@
 			min-height: unset;
 			max-width: unset;
 			flex-grow: 0;
+
+			.special-offers__sale.catalog__sale{
+				flex-grow: 1;
+			}
 
 			&:nth-child(3n-1) {
 				margin: unset;
