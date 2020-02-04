@@ -1279,10 +1279,13 @@
 			top: 9px;
 		}
 
-		.special-offers__buy {
+		.special-offers{
+			flex-grow: 1;
+
+			&__buy {
 			width: 90px;
 			height: 34px;
-		}
+		}}
 
 		.catalog__item.swiper-slide.special-offers__slide {
 			margin-bottom: 0;
