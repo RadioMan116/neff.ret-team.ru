@@ -13,13 +13,17 @@
 			font-weight: 400;
 			line-height: 22px;
 			margin-bottom: 0;
+			+p{
+				margin-bottom: 16px;
+			}
 
 		}
 
 		.banner_link {
 			text-decoration: none;
+
 			.banner_inner {
-				margin: 16px 0;
+				margin: 0 0 16px;
 				display: flex;
 				background: url('../images/+.svg')no-repeat center;
 				padding: 16px;
@@ -117,13 +121,14 @@
 			input[type="submit"] {
 				margin-left: auto;
 				width: 184px;
+				padding: 12px 10px;
 			}
 		}
 	}
 
 
 	@media screen and (max-width: 767px) {
-			padding: 16px;
+		padding: 16px;
 
 		.title-strike.abuse__title {
 			color: #2e2e2e;
