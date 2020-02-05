@@ -22,7 +22,7 @@
 		.banner_link {
 			text-decoration: none;
 
-			.banner_inner {
+			.banner_inner_list {
 				margin: 0 0 16px;
 				display: flex;
 				background: url('../images/+.svg')no-repeat center;
@@ -152,7 +152,7 @@
 			}
 
 			.banner_link {
-				.banner_inner {
+				.banner_inner_list {
 					flex-direction: column;
 
 					.banner_item {
