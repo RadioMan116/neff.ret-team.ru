@@ -651,6 +651,7 @@
 			align-items: center;
 			margin-bottom: 8px;
 
+
 			img {
 				flex-shrink: 0;
 				flex-basis: 40px;
@@ -660,11 +661,11 @@
 			}
 
 			&:nth-child(1) {
-				margin-right: 44px;
+				margin-right: 16px;
 			}
 
 			&:nth-child(2) {
-				margin-right: 43px;
+				margin-right: 16px;
 			}
 
 			&.mobile {
@@ -4162,6 +4163,11 @@
 						flex-basis: unset;
 						height: auto;
 					}
+				}
+					&:first-child {
+					width: 100%;
+					flex-basis: 100%;
+					max-width: 100%;
 				}
 			}
 
