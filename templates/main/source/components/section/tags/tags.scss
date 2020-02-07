@@ -57,6 +57,47 @@
 			background-color: rgba(238, 238, 238, 0.29);
 			border: 1px solid #334399;
 		}
+			&.button,
+			&.js-tags_data {
+				order: 2;
+				border: 0;
+				align-items: center;
+				display: flex;
+				align-items: center;
+				background-color: transparent;
+				color: $base;
+
+				a {
+					border-bottom: 1px dashed $base;
+					line-height: 1;
+				}
+
+				&:after {
+					content: '';
+					background: url('https://icongr.am/entypo/chevron-small-down.svg?color=394791&size=50');
+					width: 12px;
+					height: 12px;
+					background-size: 22px;
+					background-position: center;
+					background-repeat: no-repeat;
+					margin-left: 5px;
+				}
+			}
+
+			&.another {
+				order: 3;
+			}
+
+			&.last {
+				order: 4;
+			}
+
+			// &:nth-child(-n+8) {
+			// 	display: block;
+			// }
+			&.show {
+				display: flex !important;
+			}
 	}
 
 	&__title {
