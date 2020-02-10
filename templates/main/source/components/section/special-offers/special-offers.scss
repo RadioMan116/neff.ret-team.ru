@@ -219,6 +219,7 @@
 	}
 
 	.swiper-pagination_2,
+	.swiper-pagination,
 	.swiper-pagination_3 {
 		top: 14px;
 		right: 124px;
@@ -439,7 +440,7 @@
 
 		.swiper-button-prev,
 		.swiper-button-next {
-			display: none;
+			display: none !important;
 		}
 
 		.special-offers__buy {
@@ -473,7 +474,8 @@
 			padding: 19px 0 29px;
 		}
 
-		.swiper-pagination_2 {
+		.swiper-pagination_2,
+		.swiper-pagination {
 			display: flex;
 			bottom: -30px;
 			width: 100%;
