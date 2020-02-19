@@ -398,7 +398,7 @@
 					box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
 					background-color: #ffffff;
 					overflow: auto;
-					flex-direction: column;
+					// flex-direction: column;
 					padding-bottom: 12vh;
 					// padding-top: 52px;
 				}
@@ -576,22 +576,8 @@
 		.container {
 			justify-content: unset;
 			position: unset;
-
+			flex-wrap: wrap;
 		}
-
-		&__block_bottom .container {
-			// flex-wrap: wrap;
-			flex-wrap: nowrap;
-			flex-direction: column;
-			align-items: baseline;
-			align-content: baseline;
-			height: -moz-available;
-			/* WebKit игнор. */
-			height: -webkit-fill-available;
-			/* Mozilla игнор. */
-			height: fill-available;
-		}
-
 		.hamburger {
 			display: block;
 			margin-right: 16px;
