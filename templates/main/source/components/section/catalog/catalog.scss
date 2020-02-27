@@ -226,7 +226,7 @@
 			box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
 		}
 
-		&:nth-child(odd) {}
+		&:nth-of-type(odd) {}
 
 		.announcing {
 			width: 24px;
@@ -250,7 +250,7 @@
 			}
 		}
 
-		&:nth-child(3n-1) {
+		&:nth-of-type(3n-1) {
 			margin: 0 26px 24px;
 		}
 	}
@@ -1292,7 +1292,7 @@
 			max-width: unset;
 			flex-grow: 0;
 
-			.special-offers__sale.catalog__sale{
+			.special-offers__sale.catalog__sale {
 				flex-grow: 1;
 			}
 
@@ -2489,7 +2489,8 @@
 			// 	}
 			// }
 		}
-		.catalog__text{
+
+		.catalog__text {
 			margin-bottom: 16px;
 		}
 
