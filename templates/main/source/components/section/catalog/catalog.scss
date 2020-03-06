@@ -2613,7 +2613,10 @@
 			}
 
 			.upsale__parent {
-				position: unset;
+				img {
+					position: unset;
+				}
+
 			}
 
 		}
