@@ -396,9 +396,10 @@
 			right: 0;
 			padding: 18px 18px 24px;
 			display: flex;
-			flex-wrap: wrap;
-			align-content: flex-end;
-			align-items: flex-end;
+			// flex-wrap: wrap;
+			flex-direction: column;
+			align-content: center;
+			align-items: center;
 			text-align: center;
 			justify-content: center;
 		}
@@ -2604,9 +2605,17 @@
 
 	@media screen and (max-width: 550px) {
 
-		.stock,
-		.stock__info {
+		.stock {
 			padding: 0;
+
+			.stock__info {
+				// padding: 0;
+			}
+
+			.upsale__parent {
+				position: unset;
+			}
+
 		}
 
 		// .sidebar {
