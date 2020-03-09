@@ -492,11 +492,17 @@
 
 		&:first-child {
 			width: 80px;
+			height: 80px;
 			min-width: unset;
 			position: absolute;
 			left: 0px;
 			padding: 0;
+
 			// padding-left: 0;
+			a {
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		&+.added-cart__item {
@@ -516,7 +522,7 @@
 			}
 
 			.added-cart__price {
-				text-align: center;
+				text-align: left;
 				color: #333333;
 				font-family: "Roboto Condensed";
 				font-size: 32px;
@@ -524,6 +530,7 @@
 				line-height: 24px;
 				text-transform: uppercase;
 				margin-bottom: 20px;
+				padding-left: 80px;
 			}
 
 			.added-cart__button {
