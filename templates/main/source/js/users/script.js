@@ -686,7 +686,7 @@ $(document).ready(function () {
 	// 		$('.swiper-button-next').hide();
 	// 	}
 	// }
-	$('.js-product-card__buy,.product-day__buy,.special-offers__buy').click(function () {
+	$('.js-product-card__buy,.product-day__buy,.special-offers__buy,.analogs__buy').click(function () {
 
 		$(document).ajaxSuccess(function () {
 			console.log('1111')
@@ -856,7 +856,7 @@ $(document).ready(function () {
 		// $('.share__items').
 
 	});
-	$(".labels img").hover(function () {
+	$(".labels > img").hover(function () {
 		var alt = $(this).attr('alt');
 		var handel = $(this).position().left;
 		if ($('.labels .labels__popup').length) {

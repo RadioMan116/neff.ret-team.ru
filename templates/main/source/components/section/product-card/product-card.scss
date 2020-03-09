@@ -1903,7 +1903,7 @@
 						position: relative;
 						display: flex;
 						align-items: center;
-								margin-bottom: 5px;
+						margin-bottom: 5px;
 					}
 
 					a {
@@ -2557,7 +2557,9 @@
 			padding: 8px 15px;
 			background: #fff;
 			white-space: nowrap;
-			bottom: calc(-100% + 10px);
+			bottom: calc(-100% + 0px);
+			transform: translateX(-50%);
+			left: 50%;
 		}
 	}
 
@@ -2688,7 +2690,9 @@
 				padding: 8px 15px;
 				background: #fff;
 				white-space: nowrap;
-				bottom: calc(-100% + 10px);
+				bottom: calc(-100% + 0px);
+				transform: translateX(-30%);
+				left: 50%;
 			}
 
 			&__sale {
@@ -3908,6 +3912,8 @@
 					display: flex;
 					flex-direction: column;
 					align-items: baseline;
+
+
 				}
 
 				.analogs__pic {
@@ -3997,6 +4003,72 @@
 						line-height: 24px;
 					}
 				}
+
+			}
+		}
+
+		&.present {
+			margin-bottom: 24px;
+
+			.swiper-container {
+				.swiper-wrapper.analogs__items {
+					.analogs__text {
+						color: #2e2e2e;
+						font-family: "Roboto Condensed";
+						font-size: 13px;
+						font-weight: 400;
+						line-height: 22px;
+						text-align: left;
+						margin: 17px 0 13px;
+					}
+
+					.special-offers__sale.catalog__sale {
+						.special-offers__price.catalog__price {
+							color: #2e2e2e;
+							font-family: "Roboto Condensed";
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 24px;
+						}
+					}
+
+					.swiper-slide.analogs__item {
+						padding: 19px 13px 16px 18px;
+
+						&.present__item {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+
+							a.present__link {
+								color: #394791;
+								padding-bottom: 1px;
+								border-bottom: 1px dashed #394791;
+								text-decoration: none !important;
+								color: #394791;
+								font-family: "Roboto Condensed";
+								font-size: 20px;
+								font-weight: 400;
+								line-height: 24px;
+								text-align: center;
+								margin-bottom: 2px;
+								margin-top: 17px;
+							}
+
+							.present__pic {
+								margin: auto;
+							}
+						}
+					}
+				}
+			}
+
+			.analogs__next {
+				right: -2px;
+			}
+
+			.analogs__prev {
+				right: 30px;
 			}
 		}
 
@@ -4033,6 +4105,8 @@
 			justify-content: flex-end;
 			display: flex;
 		}
+
+
 	}
 
 
