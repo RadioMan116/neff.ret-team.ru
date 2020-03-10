@@ -59,6 +59,10 @@
 				align-items: center;
 				margin-top: 0px;
 
+				&__text {
+					line-height: 1;
+				}
+
 				&__icon {
 					top: 50%;
 					width: 16px;
@@ -636,6 +640,14 @@
 		+.ordering__payment-label {
 			display: none;
 		}
+	}
+
+	.order-checkout {
+		max-width: 100%;
+	}
+
+	#order_form_content {
+		max-width: 100%;
 	}
 
 
