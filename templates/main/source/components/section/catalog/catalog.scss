@@ -45,6 +45,7 @@
 		}
 	}
 
+
 	.seach-found {}
 
 	.catalog__text {
@@ -1610,6 +1611,10 @@
 		.swiper-pagination-instructions {
 			display: none;
 		}
+		 .catalog__pic img {
+		 	max-height: 100%;
+		 	object-fit: contain;
+		 }
 	}
 
 
