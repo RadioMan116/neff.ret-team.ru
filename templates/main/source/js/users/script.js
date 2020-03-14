@@ -1061,9 +1061,10 @@ $(document).ready(function () {
 		});
 		$(function () {
 			$('.instructions .catalog__text').matchHeight();
+			// $('.instructions .instructions__item').matchHeight();
 			let height = $('.instructions .instructions__item').height();
 
-			// $('.instructions .instructions__items').height(height + 50)
+			$('.instructions .instructions__items').height(height + 80);
 		});
 	}
 	if (windowWidth2 <= 767) {
@@ -1244,7 +1245,7 @@ $(document).ready(function () {
 				},
 				breakpoints: {
 					550: {
-						slidesPerView: 1
+						slidesPerView: 1.2
 					},
 				}
 			});
