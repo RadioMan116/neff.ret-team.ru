@@ -1617,6 +1617,7 @@ $(document).ready(function () {
 				// if (select.hasClass('active')) {
 				// 	console.log('1')
 				// }
+				$('.comparison__list').height($('.comparison__item.order').innerHeight())
 			}
 			window.onload = function () {
 				// $('.comparison__main .characteristic__row').each(function (index, el) {
