@@ -29,7 +29,7 @@
 	}
 
 	.special-offers__sale {
-		margin-top: auto;
+		margin-top: 0;
 		flex-grow: unset;
 
 		.special-offers__price {
@@ -456,6 +456,7 @@
 			font-weight: 400;
 			line-height: 26px;
 			width: 100%;
+			margin-bottom: auto;
 		}
 
 		.special-offers__pic {
@@ -554,7 +555,7 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 					width: 1000%;
-					height: 106%;
+					height: calc(100% + 14px);
 					z-index: -1;
 					top: -11px;
 					left: -300%;
@@ -1105,7 +1106,7 @@
 						font-family: Arial;
 						font-size: 14px;
 						font-weight: 700;
-						line-height: 20px;
+						line-height: 1.2;
 
 
 						&:after {
