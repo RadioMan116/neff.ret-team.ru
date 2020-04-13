@@ -709,7 +709,7 @@
 			flex-wrap: wrap;
 
 			label {
-				min-width: 35%;
+				min-width: calc(33%-12px);
 			}
 		}
 
