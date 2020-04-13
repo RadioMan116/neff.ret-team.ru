@@ -40,7 +40,7 @@
 			.catalog__price {
 				width: calc(100% - 112px);
 				height: 100%;
-				align-items: flex-start;
+				align-items: center;
 				padding-top: 2px;
 				line-height: 1;
 			}
@@ -314,7 +314,7 @@
 			border: 1px solid #f1f1f1;
 			background-color: #ffffff;
 		}
-		
+
 		.swiper-pagination-recently-watched {
 			display: none;
 		}

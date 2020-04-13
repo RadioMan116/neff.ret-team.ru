@@ -1611,10 +1611,11 @@
 		.swiper-pagination-instructions {
 			display: none;
 		}
-		 .catalog__pic img {
-		 	max-height: 100%;
-		 	object-fit: contain;
-		 }
+
+		.catalog__pic img {
+			max-height: 100%;
+			object-fit: contain;
+		}
 	}
 
 
@@ -2510,7 +2511,7 @@
 			margin-bottom: 16px;
 		}
 
-		.catalog__prop {
+		&__prop {
 
 
 			.link-pop-glossary {
