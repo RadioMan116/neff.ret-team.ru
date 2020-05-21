@@ -5664,7 +5664,7 @@
 					// max-height: 35px !important;
 
 
-					margin: 0 6px 0 0;
+					margin: 0 6px 8px 0;
 
 				}
 
@@ -5675,7 +5675,13 @@
 					margin-right: 6px;
 					flex-shrink: 0;
 					order: -1;
+					margin-bottom: 8px;
+
+					img {
+						margin-bottom: 0;
+					}
 				}
+
 			}
 
 			.product-card__social {
