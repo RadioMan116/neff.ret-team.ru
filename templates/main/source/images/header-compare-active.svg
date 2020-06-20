@@ -1,1 +1,10 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6V4h18v2zm0 7v-2h18v2zm0 7v-2h8v2zm18-2v2h-2.5v2.5h-2V20H14v-2h2.5v-2.5h2V18z" fill="#c00" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="compare">
+    <g id="compare">
+      <path d="M0 0L18 0L18 18L0 18L0 0Z" id="Rectangle-5" fill="none" stroke="none" />
+      <path d="M13.5 1.5L13.5 0L0 0L0 1.5L13.5 1.5ZM13.5 5.25L13.5 6.75L0 6.75L0 5.25L13.5 5.25ZM12 9L10.5 9L10.5 10.5L9 10.5L9 12L10.5 12L10.5 13.5L12 13.5L12 12L13.5 12L13.5 10.5L12 10.5L12 9ZM7.5 12L7.5 10.5L0 10.5L0 12L7.5 12Z" transform="translate(2.25 3)" id="Combined-Shape" fill="#FF0000" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
