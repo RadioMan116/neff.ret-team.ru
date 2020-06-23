@@ -418,6 +418,8 @@
 
 					&.padding {
 						padding-top: 52px;
+
+
 					}
 				}
 			}
@@ -439,10 +441,11 @@
 				&.padding {
 					height: 112px;
 
-					.header__compare.active,
-					.header__favorite.active {
+					.header__compare,
+					.header__favorite {
 						display: flex;
 					}
+
 				}
 			}
 
