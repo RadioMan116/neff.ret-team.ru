@@ -4633,7 +4633,7 @@
 			}
 
 			p {
-				color: #333333;
+				// color: #333333;
 				line-height: 1;
 			}
 		}
@@ -5840,6 +5840,8 @@
 				flex-direction: row;
 				flex-wrap: wrap;
 				align-items: center;
+				position: relative;
+				padding: 8px 0;
 
 				// justify-content: center;
 				&:before {
@@ -5847,44 +5849,84 @@
 					height: 40px;
 					width: 40px;
 					margin-right: 12px;
-					margin-bottom: 9px;
-					margin-top: 9px;
+					margin-bottom: 0;
+					margin-top: 0;
+					position: absolute;
+					top: 9px;
 				}
 
 				.delivery__info {
-					font-size: 14px;
+					color: #333333;
+					font-family: Arial;
+					font-size: 11px;
+					font-weight: 400;
 					line-height: 18px;
+					padding-left: 50px;
+					width: 100%;
+					position: relative;
 
 
 					&:last-of-type {
 						// line-height: 2;
-						margin-bottom: 9px;
+						margin-bottom: 0px;
+						width: calc(100% + 9px);
+						margin-right: -9px;
 					}
 
 					&:first-of-type {
 						margin-bottom: 0px;
 						// padding-left: 52px;
 						// margin: auto 0;
-						width: calc(100% - 52px);
-
+						// width: calc(100% - 52px);
+						width: 100%;
 						// a {
 						// 	margin: 0 3px;
 						// }
+					}
 
+					.delivery__banner {
+						width: 12px;
+						height: 12px;
+						border-radius: 2px;
+						background: #394791;
 
+						// display: flex;
+						img {
+							width: 12px;
+							height: 12px;
+						}
 					}
 				}
 			}
 
 			.product-card__announcing {
-				margin-bottom: 5px;
+				margin-bottom: 16px;
 				justify-content: space-between;
 
 				@media screen and (max-width: 480px) {
 					justify-content: flex-end;
 				}
 
+				.announcing__info {
+					flex-direction: row;
+					flex-wrap: wrap;
+					color: #333333;
+					font-family: Arial;
+					font-size: 11px;
+					font-weight: 400;
+					line-height: 18px;
+
+					a {
+						margin: 0 4px;
+					}
+				}
+
 				.announcing__item {
+					color: #333333;
+					font-family: Arial;
+					font-size: 11px;
+					font-weight: 400;
+					line-height: 18px;
 
 					@media screen and (max-width: 480px) {
 						flex-basis: 45%;
@@ -5892,7 +5934,7 @@
 					}
 
 					&:nth-child(odd) {
-						padding-right: 18px;
+						padding-right: 0px;
 						margin-right: 0;
 					}
 				}
