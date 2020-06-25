@@ -4342,12 +4342,16 @@
 						text-decoration: none !important;
 						display: flex;
 						flex-wrap: wrap;
+						border-bottom: 1px dashed #394791;
 					}
 
 					p {
 						margin-bottom: 0;
-						border-bottom: 1px dashed #394791;
-						margin-right: 10px;
+						margin-right: 6px;
+
+						&:last-of-type {
+							margin-right: 0;
+						}
 					}
 
 					img {
@@ -5929,7 +5933,7 @@
 					line-height: 18px;
 
 					@media screen and (max-width: 480px) {
-						flex-basis: 45%;
+						flex-basis: 48%;
 						max-width: 50%;
 					}
 
