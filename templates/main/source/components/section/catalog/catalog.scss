@@ -1132,14 +1132,14 @@
 			background: #212c89e0;
 
 
-			.advantages__link {
+			.advantages-low__link {
 				max-height: 0;
 				overflow: hidden;
 				transition: 0.3s;
 			}
 
 			&:hover {
-				.advantages__link {
+				.advantages-low__link {
 					max-height: unset;
 					overflow: visible;
 				}
