@@ -1562,7 +1562,12 @@
 				position: absolute;
 
 				picture {
+
 					// text-align: unset;
+					img {
+						max-height: 64px;
+						max-width: 58px;
+					}
 				}
 			}
 
