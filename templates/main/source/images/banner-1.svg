@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65px" height="57px" viewBox="0 0 65 57" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <path d="M0 0L64 0L64 56L0 56L0 0Z" transform="translate(0.5 0.5)" id="Rectangle" fill="#394791" stroke="none" />
+  <path d="M16 25.2481L6.11146 30.4338L7.98766 19.4268L-1.11022e-16 11.6247L11.0481 10.0077L16 0L20.9519 10.0077L32 11.6247L24.0123 19.4268L25.8885 30.4338L16 25.2481Z" transform="translate(16.5 13.5)" id="Star" fill="#FFFFFF" stroke="none" />
+</svg>
