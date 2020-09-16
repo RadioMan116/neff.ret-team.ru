@@ -566,6 +566,12 @@
 		&.out-production {
 			color: #333333;
 			font-weight: 700;
+
+			+.product-card__date {
+				&:before {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -4361,6 +4367,7 @@
 			margin: 9px 0 3px;
 			order: 3;
 			justify-content: center;
+			align-items: center;
 		}
 
 		&__key,
@@ -5649,6 +5656,15 @@
 							height: 12px;
 						}
 					}
+				}
+
+				&.free {
+
+					.delivery__info,
+					+.product-card__announcing .announcing__info {
+						font-size: 14px;
+					}
+
 				}
 			}
 
