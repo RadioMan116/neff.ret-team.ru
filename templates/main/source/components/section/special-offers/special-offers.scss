@@ -224,11 +224,16 @@
 		top: 14px;
 		right: 124px;
 		display: flex;
-		justify-content: flex-end;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.swiper-pagination-bullet {
 		margin-left: 16px;
+		margin-top: 4px;
+		&:first-of-type{
+			margin-left: 0;
+		}
 	}
 
 	.swiper-button-prev,
@@ -306,7 +311,7 @@
 			top: 14px;
 			right: 124px;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 		}
 
 		.price__dashed {
