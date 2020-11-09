@@ -6,6 +6,7 @@ $(document).ready(function () {
 			menuList = document.querySelector('.menu'),
 			menuBottom = document.getElementById('js-header__block_bottom'),
 			favorite = document.querySelector(".header__favorite"),
+			menuParent = document.querySelector('.header__blocks'),
 			compare = document.querySelector(".header__compare");
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
@@ -20,6 +21,7 @@ $(document).ready(function () {
 				$(".header__overlay").hide();
 				menuBottom.classList.remove('padding')
 				button.parentNode.parentNode.classList.remove("padding");
+				menuParent.classList.remove("active");
 			} else {
 				button.parentNode.parentNode.classList.add("active");
 				button.className += " opened";
@@ -28,6 +30,7 @@ $(document).ready(function () {
 				menuList.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
+				menuParent.classList.add("active");
 				if ((favorite.classList.contains('active')) || (compare.classList.contains('active'))) {
 					menuBottom.classList.add('padding')
 					button.parentNode.parentNode.classList.add("padding");
@@ -1304,17 +1307,21 @@ $(document).ready(function () {
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
-	$(window).scroll(function () {
-		var scroll = $(window).scrollTop();
-		// var asideHeightSum = asideHeight + asideOffsetTop - 600;
-		if (scroll > 10) {
-			$(".dropdown-menu").removeClass("active");
-			$(".header__overlay").removeClass("header__overlay-open");
-			$(".header .search__popup").removeClass("search__popup-open");
-			$(".header__search").removeClass("header__search-open");
-			$(".header__overlay").removeClass("header__overlay-open");
-		}
-	});
+
+	if (windowWidth2 > 767){
+		$(window).scroll(function () {
+			var scroll = $(window).scrollTop();
+			// var asideHeightSum = asideHeight + asideOffsetTop - 600;
+			if (scroll > 10) {
+				$(".dropdown-menu").removeClass("active");
+				$(".header__overlay").removeClass("header__overlay-open");
+				$(".header .search__popup").removeClass("search__popup-open");
+				$(".header__search").removeClass("header__search-open");
+				$(".header__overlay").removeClass("header__overlay-open");
+			}
+		});
+	}
+
 	$(".header__overlay").click(function () {
 		$(".header .search__popup").removeClass("search__popup-open");
 		$(".header__search").removeClass("header__search-open");

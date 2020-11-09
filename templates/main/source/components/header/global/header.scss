@@ -401,27 +401,32 @@
 
 				&.active {
 					display: block;
-					transform: scale(1);
-					position: fixed;
+					// transform: scale(1);
+					position: static;
 					top: 58px;
 					left: 0;
 					width: 100%;
-					height: 100%;
+					height: auto;
 					transition: transform 0.3s;
 					display: flex;
 					align-items: baseline;
-					box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+					// box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
 					background-color: #ffffff;
 					overflow: auto;
 					// flex-direction: column;
 					padding-bottom: 12vh;
+					margin: 0;
+					border-top: unset;
 
 					&.padding {
-						padding-top: 52px;
-
-
+						// padding-top: 52px;
 					}
 				}
+			}
+
+			&__blocks.active {
+				overflow-y: auto;
+				height: 100vh;
 			}
 
 			&__block_top {
