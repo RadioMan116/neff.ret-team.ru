@@ -21,7 +21,8 @@ $(document).ready(function () {
 				$(".header__overlay").hide();
 				menuBottom.classList.remove('padding')
 				button.parentNode.parentNode.classList.remove("padding");
-				menuParent.classList.remove("active");
+				menuParent.classList.remove("active")
+				menuParent.parentNode.classList.remove('active');
 			} else {
 				button.parentNode.parentNode.classList.add("active");
 				button.className += " opened";
@@ -30,7 +31,8 @@ $(document).ready(function () {
 				menuList.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
-				menuParent.classList.add("active");
+				menuParent.classList.add("active")
+				menuParent.parentNode.classList.add('active');
 				if ((favorite.classList.contains('active')) || (compare.classList.contains('active'))) {
 					menuBottom.classList.add('padding')
 					button.parentNode.parentNode.classList.add("padding");
