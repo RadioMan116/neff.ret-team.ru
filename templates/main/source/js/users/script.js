@@ -52,10 +52,10 @@ $(document).ready(function () {
 
 				// 	link.style.background = `url('${url}')`;
 				// }
-				if (span) {
+				// if (span) {
 
-					span.style.background = `url('${url}')`;
-				}
+				// 	span.style.background = `url('${url}')`;
+				// }
 			});
 		}
 	})();
